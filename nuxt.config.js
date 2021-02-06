@@ -57,4 +57,11 @@ export default {
   build: {
     transpile: [/^element-ui/],
   },
+
+  // https://storybook.nuxtjs.org/options
+  storybook: {
+    addons: ['@storybook/addon-controls', '@storybook/addon-notes'],
+    stories: ['~/stories/**/*.stories.js'],
+    port: 4000,
+  },
 }

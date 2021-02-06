@@ -1,35 +1,20 @@
-<template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">my-editune</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
+<template lang="pug">
+  .container
+    div
+      logo
+      h1.title my-editune
+      .links
+        a.button--green(href='https://nuxtjs.org/' target='_blank' rel='noopener noreferrer').
+            Documentation
+        a.button--grey(href='https://github.com/nuxt/nuxt.js' target='_blank' rel='noopener noreferrer').
           GitHub
-        </a>
-      </div>
-    </div>
-  </div>
 </template>
 
 <script>
 export default {}
 </script>
 
-<style>
+<style lang="scss">
 .container {
   margin: 0 auto;
   min-height: 100vh;
