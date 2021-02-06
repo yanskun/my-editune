@@ -11,7 +11,13 @@
 </template>
 
 <script>
-export default {}
+import Logo from '../components/atoms/Logo'
+
+export default {
+  components: {
+    Logo,
+  },
+}
 </script>
 
 <style lang="scss">
