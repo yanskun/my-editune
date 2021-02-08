@@ -1,5 +1,5 @@
 ---
-to: test/<%= level %>/<%= h.changeCase.camelCase(name) %>/<%= h.changeCase.camelCase(name) %>.spec.js
+to: test/<%= level %>/<%= h.changeCase.pascalCase(name) %>.spec.js
 ---
 import { shallowMount } from '@vue/test-utils'
 import Component from '~/components/atoms/<%= h.changeCase.camelCase(name) %>'

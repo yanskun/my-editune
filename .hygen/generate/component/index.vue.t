@@ -1,5 +1,5 @@
 ---
-to: components/<%= level %>/<%= h.changeCase.camelCase(name) %>/index.vue
+to: components/<%= level %>/<%= h.changeCase.pascalCase(name) %>/index.vue
 ---
 <template lang="pug">
 </template>

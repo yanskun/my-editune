@@ -12,7 +12,8 @@
     "lint": "yarn lint:js && yarn lint:style",
     "test": "jest",
     "storybook": "nuxt storybook",
-    "snapshot": "jest --updateSnapshot"
+    "snapshot": "jest --updateSnapshot",
+    "hygen": "hygen generate component"
   },
   "lint-staged": {
     "*.{js,vue}": "eslint",
