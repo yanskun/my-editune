@@ -2,8 +2,7 @@
   <svg
     version="1.0"
     xmlns="http://www.w3.org/2000/svg"
-    width="301.000000pt"
-    height="218.000000pt"
+    :width="`${width}px`"
     viewBox="0 0 301.000000 218.000000"
     preserveAspectRatio="xMidYMid meet"
   >
@@ -113,3 +112,15 @@ c18 0 44 4 58 10 l26 10 0 134 c0 170 -12 230 -55 273 -47 47 -114 41 -177
     </g>
   </svg>
 </template>
+
+<script>
+export default {
+  props: {
+    width: {
+      type: Number,
+      required: false,
+      default: 300,
+    },
+  },
+}
+</script>
