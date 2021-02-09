@@ -3,15 +3,15 @@ import Logo from '.'
 export default {
   title: 'Atoms/Logo',
   component: Logo,
-  argTypes: {
-    width: {
-      control: { type: 'number' },
-      defaultValue: 200,
-    },
-  },
 }
 
-export const Basic = ({ width }) => ({
-  component: { Logo },
-  template: `<Logo :width="${width}" />`,
+const Template = (args, { argTypes }) => ({
+  props: Object.keys(argTypes),
+  components: { Logo },
+  template: `<Logo v-bind="$props" /> `,
 })
+
+export const Basic = Template.bind({})
+Basic.args = {
+  width: 200,
+}

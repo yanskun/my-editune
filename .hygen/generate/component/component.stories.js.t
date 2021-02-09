@@ -8,7 +8,11 @@ export default {
   component: <%= h.changeCase.pascalCase(name) %>,
 }
 
-export const Basic = ({}) => ({
-  component: { <%= h.changeCase.pascalCase(name) %> },
-  template: `<<%= h.changeCase.pascalCase(name) %> />`
+const Template = (args, { argTypes }) => ({
+  props: Object.keys(argTypes),
+  components: { <%= h.changeCase.pascalCase(name) %> },
+  template: `<<%= h.changeCase.pascalCase(name) %> v-bind="$props" /> `,
 })
+
+export const Basic = Template.bind({})
+Basic.args = {}
