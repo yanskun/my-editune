@@ -60,7 +60,7 @@ export default {
 
   // https://storybook.nuxtjs.org/options
   storybook: {
-    addons: ['@storybook/addon-controls', '@storybook/addon-notes'],
+    addons: ['@storybook/addon-essentials'],
     port: 4000,
   },
 }
