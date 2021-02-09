@@ -14,11 +14,11 @@ jobs:
       - name: Install and Build 🔧
         run: | # Install npm packages and build the Storybook files
           yarn install
-          yarn build-storybook
+          yarn build:storybook
       - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@3.6.2
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          personal_token: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: main # The branch the action should deploy to.
           FOLDER: docs-build # The folder that the build-storybook script generates files.
           CLEAN: true # Automatically remove deleted files from the deploy branch

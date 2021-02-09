@@ -12,6 +12,7 @@
     "lint": "yarn lint:js && yarn lint:style",
     "test": "jest",
     "storybook": "nuxt storybook",
+    "build:storybook": "yarn build-storybook -o ./docs",
     "snapshot": "jest --updateSnapshot",
     "hygen": "hygen generate component"
   },
