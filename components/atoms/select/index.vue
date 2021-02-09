@@ -4,7 +4,13 @@
 </template>
 
 <script>
+import { Select, Option } from 'element-ui'
+
 export default {
+  components: {
+    'el-select': Select,
+    'el-option': Option,
+  },
   model: {
     prop: 'value',
     event: 'on-change',
