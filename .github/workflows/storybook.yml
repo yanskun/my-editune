@@ -3,6 +3,11 @@ name: Build and Deploy
 on:
   push:
     paths: ["components/**"] # Trigger the action only when files change in the folders defined here
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
