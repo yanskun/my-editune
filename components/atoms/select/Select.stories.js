@@ -39,19 +39,3 @@ export const Basic = () => ({
     <Select :value="value" :placeholder="placeholder" :options="options" @on-change="value = $event" />
   `
 })
-
-// export const Basic = Template.bind({})
-// Basic.args = {
-//   value: '',
-//   placeholder: 'select here',
-//   options: [
-//     {
-//       value: 'Option1',
-//       label: 'Option1',
-//     },
-//     {
-//       value: 'Option2',
-//       label: 'Option2',
-//     },
-//   ],
-// }
