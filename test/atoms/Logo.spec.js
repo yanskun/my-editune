@@ -1,10 +1,10 @@
-import { shallowMount } from '@vue/test-utils'
-import Component from '~/components/atoms/Logo'
+import { shallowMount } from "@vue/test-utils"
+import Component from "~/components/atoms/Logo"
 
-describe('Logo', () => {
-  test('snapshot', () => {
+describe("Logo", () => {
+  test("snapshot", () => {
     const wrapper = shallowMount(Component, {
-      props: {},
+      props: {}
     })
     expect(wrapper.element).toMatchSnapshot()
   })

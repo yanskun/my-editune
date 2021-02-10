@@ -8,7 +8,7 @@ export default {
   component: <%= h.changeCase.pascalCase(name) %>,
 }
 
-const Template = (args, { argTypes }) => ({
+const Template = (_, { argTypes }) => ({
   props: Object.keys(argTypes),
   components: { <%= h.changeCase.pascalCase(name) %> },
   template: `<<%= h.changeCase.pascalCase(name) %> v-bind="$props" /> `,
