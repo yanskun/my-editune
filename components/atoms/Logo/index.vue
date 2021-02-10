@@ -119,8 +119,8 @@ export default {
     width: {
       type: Number,
       required: false,
-      default: 300,
-    },
-  },
+      default: 300
+    }
+  }
 }
 </script>

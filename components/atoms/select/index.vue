@@ -4,55 +4,55 @@
 </template>
 
 <script>
-import { Select, Option } from 'element-ui'
+import { Select, Option } from "element-ui"
 
 export default {
   components: {
-    'el-select': Select,
-    'el-option': Option,
+    "el-select": Select,
+    "el-option": Option
   },
   model: {
-    prop: 'value',
-    event: 'on-change',
+    prop: "value",
+    event: "on-change"
   },
 
   props: {
     value: {
       type: String,
       required: false,
-      default: '',
+      default: ""
     },
 
     placeholder: {
       type: String,
-      required: true,
+      required: true
     },
 
     options: {
       type: Array,
-      required: true,
-    },
+      required: true
+    }
   },
 
-  data() {
+  data () {
     return {
-      handleValue: '',
+      handleValue: ""
     }
   },
 
   watch: {
     value: {
       immediate: true,
-      handler(newVal) {
+      handler (newVal) {
         this.handleValue = newVal
-      },
-    },
+      }
+    }
   },
 
   methods: {
-    onChange(newValue) {
-      this.$emit('on-change', newValue)
-    },
-  },
+    onChange (newValue) {
+      this.$emit("on-change", newValue)
+    }
+  }
 }
 </script>
