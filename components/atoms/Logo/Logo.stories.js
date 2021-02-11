@@ -1,17 +1,21 @@
+import { number, withKnobs } from "@storybook/addon-knobs"
 import Logo from "."
 
 export default {
   title: "Atoms/Logo",
-  component: Logo
+  decorators: [withKnobs]
 }
 
-const Template = (_, { argTypes }) => ({
-  props: Object.keys(argTypes),
-  components: { Logo },
-  template: "<Logo v-bind=\"$props\" /> "
-})
-
-export const Basic = Template.bind({})
-Basic.args = {
-  width: 200
+export const Basic = () => {
+  return {
+    components: { Logo },
+    props: {
+      width: {
+        default: number("width", 200)
+      }
+    },
+    template: `
+      <Logo :width="width" />
+    `
+  }
 }

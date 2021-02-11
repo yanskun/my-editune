@@ -113,7 +113,7 @@ c18 0 44 4 58 10 l26 10 0 134 c0 170 -12 230 -55 273 -47 47 -114 41 -177
   </svg>
 </template>
 
-<script>
+<script lang="ts">
 export default {
   props: {
     width: {

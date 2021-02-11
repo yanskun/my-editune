@@ -17,6 +17,7 @@ module.exports = {
   // add your custom rules here
   rules: {
     quotes: ["error", "double"],
-    "comma-dangle": ["error", "never"]
+    "comma-dangle": ["error", "never"],
+    "@typescript-eslint/explicit-module-boundary-types": ["off"]
   }
 }
