@@ -1,5 +1,5 @@
 import { shallowMount } from "@vue/test-utils"
-import Component from "~/components/atoms/select"
+import Component from "~/components/atoms/Select"
 
 describe("Select", () => {
   test("snapshot", () => {

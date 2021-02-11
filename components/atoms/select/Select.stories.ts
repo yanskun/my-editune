@@ -1,4 +1,4 @@
-import { array, text, withKnobs } from "@storybook/addon-knobs"
+import { object, text, withKnobs } from "@storybook/addon-knobs"
 import Select from "."
 
 export default {
@@ -19,7 +19,7 @@ export const Basic = () => {
         default: text("placeholder", "select here")
       },
       options: {
-        default: array("options", [
+        default: object("options", [
           {
             value: "Option1",
             label: "Option1"
