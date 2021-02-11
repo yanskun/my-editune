@@ -3,7 +3,7 @@
     el-option(v-for='item in options' :label="item.label" :value="item.value" :key='item.value')
 </template>
 
-<script>
+<script lang="ts">
 import { Select, Option } from "element-ui"
 
 export default {
@@ -43,14 +43,14 @@ export default {
   watch: {
     value: {
       immediate: true,
-      handler (newVal) {
-        this.handleValue = newVal
+      handler (newValue: string) {
+        this.handleValue = newValue
       }
     }
   },
 
   methods: {
-    onChange (newValue) {
+    onChange (newValue: string) {
       this.$emit("on-change", newValue)
     }
   }
