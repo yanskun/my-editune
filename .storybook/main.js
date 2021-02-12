@@ -1,21 +1,21 @@
 module.exports = {
   stories: [
-    "../components/**/*.stories.mdx",
-    "../components/**/*.stories.@(js|jsx|ts|tsx)"
+    "../stories/**/*.stories.@(js|jsx|ts|tsx)"
   ],
   addons: [
     {
       name: "@storybook/addon-essentials",
       options: {
-        actions: true,
+        actions: false,
         backgrounds: false,
-        controls: true,
+        controls: false,
         docs: false,
         viewport: false,
         toolbars: false
       }
     },
-    "@storybook/addon-knobs"
+    "@storybook/addon-knobs",
+    "@storybook/addon-actions"
   ],
   webpackFinal: async (config, { configType }) => {
     // `configType` has a value of 'DEVELOPMENT' or 'PRODUCTION'

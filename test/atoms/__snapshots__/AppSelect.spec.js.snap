@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Select snapshot 1`] = `
+exports[`AppSelect snapshot 1`] = `
 <el-select-stub
   autocomplete="off"
   multiplelimit="0"

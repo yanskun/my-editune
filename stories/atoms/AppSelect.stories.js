@@ -1,8 +1,8 @@
 import { object, text, withKnobs } from "@storybook/addon-knobs"
-import Select from "."
+import AppSelect from "../../components/atoms/AppSelect"
 
 export default {
-  title: "Atoms/Select",
+  title: "Atoms/AppSelect",
   decorators: [withKnobs],
   argTypes: {
     onChange: {
@@ -13,7 +13,7 @@ export default {
 
 export const Basic = () => {
   return {
-    components: { Select },
+    components: { AppSelect },
     props: {
       placeholder: {
         default: text("placeholder", "select here")
@@ -37,7 +37,7 @@ export const Basic = () => {
       }
     },
     template: `
-      <Select :value="value" :placeholder="placeholder" :options="options" @on-change="value = $event" />
+      <AppSelect :value="value" :placeholder="placeholder" :options="options" @on-change="value = $event" />
     `
   }
 }

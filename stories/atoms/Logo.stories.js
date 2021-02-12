@@ -1,5 +1,5 @@
 import { number, withKnobs } from "@storybook/addon-knobs"
-import Logo from "."
+import Logo from "../../components/atoms/Logo"
 
 export default {
   title: "Atoms/Logo",
