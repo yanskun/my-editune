@@ -4,12 +4,18 @@
 </template>
 
 <script lang="ts">
-import { Select, Option } from "element-ui"
+import Vue, { PropType } from "vue"
+import { Select, Option as ElOption } from "element-ui"
 
-export default {
+export type Option = {
+  value: string
+  label: string
+}
+
+export default Vue.extend({
   components: {
     "el-select": Select,
-    "el-option": Option
+    "el-option": ElOption
   },
   model: {
     prop: "value",
@@ -25,11 +31,12 @@ export default {
 
     placeholder: {
       type: String,
-      required: true
+      required: false,
+      default: ""
     },
 
     options: {
-      type: Array,
+      type: Array as PropType<Option[]>,
       required: true
     }
   },
@@ -54,5 +61,5 @@ export default {
       this.$emit("on-change", newValue)
     }
   }
-}
+})
 </script>

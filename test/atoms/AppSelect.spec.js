@@ -1,7 +1,7 @@
 import { shallowMount } from "@vue/test-utils"
-import Component from "~/components/atoms/Select"
+import Component from "~/components/atoms/AppSelect"
 
-describe("Select", () => {
+describe("AppSelect", () => {
   test("snapshot", () => {
     const wrapper = shallowMount(Component, {
       props: {
