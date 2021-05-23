@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Switch snapshot false 1`] = `
+<el-switch-stub
+  activecolor=""
+  activeiconclass=""
+  activevalue="true"
+  inactivecolor=""
+  inactiveiconclass=""
+  name=""
+  validateevent="true"
+  width="40"
+/>
+`;
+
+exports[`Switch snapshot true 1`] = `
+<el-switch-stub
+  activecolor=""
+  activeiconclass=""
+  activevalue="true"
+  inactivecolor=""
+  inactiveiconclass=""
+  name=""
+  validateevent="true"
+  width="40"
+/>
+`;
