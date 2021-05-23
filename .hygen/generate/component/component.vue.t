@@ -7,7 +7,7 @@ to: components/<%= level %>/<%= h.changeCase.pascalCase(name) %>.vue
 <script lang="ts">
 import Vue, { PropType } from "vue"
 
-Vue.extend({})
+export default Vue.extend({})
 </script>
 
 <style lang="scss" scoped>
