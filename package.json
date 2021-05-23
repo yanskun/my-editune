@@ -16,18 +16,9 @@
     "build:storybook": "yarn build-storybook -o ./docs",
     "snapshot": "jest --updateSnapshot",
     "hygen": "hygen generate component",
-    "build-storybook": "build-storybook"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.{js,ts,vue}": [
-      "eslint"
-    ],
-    "*.{css,vue}": "stylelint"
+    "build-storybook": "build-storybook",
+    "prepare": "husky install",
+    "pre-commit-lint": "yarn check-types && yarn lint-staged"
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
@@ -39,6 +30,8 @@
     "nuxt": "^2.15.4"
   },
   "devDependencies": {
+    "@commitlint/cli": "^12.1.4",
+    "@commitlint/config-conventional": "^12.1.4",
     "@nuxt/types": "^2.15.6",
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/eslint-config": "^6.0.0",
