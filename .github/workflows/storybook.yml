@@ -15,7 +15,7 @@ jobs:
       - name: Install and Build 🔧
         run: | # Install npm packages and build the Storybook files
           yarn install
-          yarn build:storybook
+          yarn predeploy
       - name: Deploy 🚀
         uses: peaceiris/actions-gh-pages@v3.8.0
         with:
