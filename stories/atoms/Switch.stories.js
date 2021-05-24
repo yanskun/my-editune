@@ -20,7 +20,7 @@ export const Basic = () => {
       }
     },
     template: `
-      <el-switch :value="value" @on-change="value = $event" />
+      <el-switch :value="value" @change="value = $event" />
     `
   }
 }
