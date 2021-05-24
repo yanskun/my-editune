@@ -1,8 +1,8 @@
 # https://dev.to/kouts/deploy-storybook-to-github-pages-3bij
-name: Build and Deploy
+name: Deploy Storybook
 on:
   push:
-    paths: ["components/**"] # Trigger the action only when files change in the folders defined here
+    # paths: ["components/**"] # Trigger the action only when files change in the folders defined here
     branches: ["main"]
 jobs:
   build-and-deploy:
@@ -21,6 +21,5 @@ jobs:
         with:
           personal_token: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: main # The branch the action should deploy to.
-          FOLDER: docs-build # The folder that the build-storybook script generates files.
           CLEAN: true # Automatically remove deleted files from the deploy branch
           TARGET_FOLDER: docs # The folder that we serve our Storybook files from
