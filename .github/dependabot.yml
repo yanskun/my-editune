@@ -9,12 +9,13 @@ updates:
   open-pull-requests-limit: 10
   reviewers:
     - yasudanaoya
-  assignees:
-    - yasudanaoya
   commit-message:
     prefix: fix
     prefix-development: chore
     include: scope
+  labeled:
+    - dependencies
+    - automerge
   ignore:
     - dependency-name: "node-sass"
       versions: ["5.x"]
@@ -29,8 +30,6 @@ updates:
     time: '00:00'
   open-pull-requests-limit: 10
   reviewers:
-    - yasudanaoya
-  assignees:
     - yasudanaoya
   commit-message:
     prefix: fix
