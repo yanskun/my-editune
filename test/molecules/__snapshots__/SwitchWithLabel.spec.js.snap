@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SwitchWithLabel snapshot 1`] = `
+<div
+  class="switch-with-label"
+>
+  <app-switch-stub
+    class="switch"
+  />
+  <p
+    class="label"
+  >
+    
+  </p>
+</div>
+`;
