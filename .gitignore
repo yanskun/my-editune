@@ -91,4 +91,4 @@ sw.*
 
 # storybook
 .nuxt-storybook
-storybook-static
+docs
