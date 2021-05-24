@@ -3,12 +3,7 @@ import Switch from "../../components/atoms/Switch"
 
 export default {
   title: "Atoms/Switch",
-  decorators: [withKnobs],
-  argTypes: {
-    onChange: {
-      action: "onChange"
-    }
-  }
+  decorators: [withKnobs]
 }
 
 export const Basic = () => {

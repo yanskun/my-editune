@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InputWithLabel snapshot number 1`] = `
+<div
+  class="input-with-label"
+>
+  <el-input-stub
+    autocomplete="off"
+    class="input"
+    type="text"
+    validateevent="true"
+  />
+</div>
+`;
+
+exports[`InputWithLabel snapshot text 1`] = `
+<div
+  class="input-with-label"
+>
+  <el-input-stub
+    autocomplete="off"
+    class="input"
+    type="text"
+    validateevent="true"
+  />
+</div>
+`;
