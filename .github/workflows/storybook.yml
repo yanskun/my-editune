@@ -5,7 +5,7 @@ on:
     # paths: ["components/**"] # Trigger the action only when files change in the folders defined here
     branches: ["main", "chore/storybook"]
 jobs:
-  build-and-deploy:
+  deploy-storybook:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout 🛎️
