@@ -6,11 +6,12 @@ exports[`SwitchWithLabel snapshot 1`] = `
 >
   <app-switch-stub
     class="switch"
+    value="true"
   />
   <p
     class="label"
   >
-    
+    test
   </p>
 </div>
 `;

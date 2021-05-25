@@ -4,7 +4,7 @@ import Component from "~/components/molecules/SwitchWithLabel"
 describe("SwitchWithLabel", () => {
   test("snapshot", () => {
     const wrapper = shallowMount(Component, {
-      props: {
+      propsData: {
         value: true,
         label: "test"
       }

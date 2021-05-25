@@ -4,7 +4,7 @@ import Component from "~/components/molecules/InputWithLabel.vue"
 describe("InputWithLabel", () => {
   test("snapshot text", () => {
     const wrapper = shallowMount(Component, {
-      props: {
+      propsData: {
         value: "test",
         label: "test label"
       }
@@ -14,8 +14,9 @@ describe("InputWithLabel", () => {
 
   test("snapshot number", () => {
     const wrapper = shallowMount(Component, {
-      props: {
+      propsData: {
         label: "test label",
+        value: 0,
         type: "number"
       }
     })

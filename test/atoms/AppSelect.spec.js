@@ -4,7 +4,7 @@ import Component from "~/components/atoms/AppSelect"
 describe("AppSelect", () => {
   test("snapshot", () => {
     const wrapper = shallowMount(Component, {
-      props: {
+      propsData: {
         value: "",
         placeholder: "placeholder",
         options: [

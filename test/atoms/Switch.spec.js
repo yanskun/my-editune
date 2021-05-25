@@ -4,7 +4,7 @@ import Component from "~/components/atoms/Switch"
 describe("Switch", () => {
   test("snapshot true", () => {
     const wrapper = shallowMount(Component, {
-      props: {
+      propsData: {
         value: true
       }
     })
@@ -13,7 +13,7 @@ describe("Switch", () => {
 
   test("snapshot false", () => {
     const wrapper = shallowMount(Component, {
-      props: {
+      propsData: {
         value: false
       }
     })

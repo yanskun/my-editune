@@ -7,8 +7,9 @@ exports[`InputWithLabel snapshot number 1`] = `
   <el-input-stub
     autocomplete="off"
     class="input"
-    type="text"
+    type="number"
     validateevent="true"
+    value="0"
   />
 </div>
 `;
@@ -22,6 +23,7 @@ exports[`InputWithLabel snapshot text 1`] = `
     class="input"
     type="text"
     validateevent="true"
+    value="test"
   />
 </div>
 `;
