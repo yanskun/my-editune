@@ -3,9 +3,7 @@ import Component from "~/components/atoms/Logo"
 
 describe("Logo", () => {
   test("snapshot", () => {
-    const wrapper = shallowMount(Component, {
-      props: {}
-    })
+    const wrapper = shallowMount(Component)
     expect(wrapper.element).toMatchSnapshot()
   })
 })

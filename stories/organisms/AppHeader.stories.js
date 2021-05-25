@@ -1,16 +1,17 @@
 import { withKnobs } from "@storybook/addon-knobs"
-import Logo from "../../components/atoms/Logo"
+import AppHeader from "../../components/organisms/AppHeader"
 
 export default {
-  title: "Atoms/Logo",
+  title: "Organisms/AppHeader",
   decorators: [withKnobs]
 }
 
 export const Basic = () => {
   return {
-    components: { Logo },
+    components: { AppHeader },
+    props: {},
     template: `
-      <Logo />
+      <AppHeader />
     `
   }
 }
