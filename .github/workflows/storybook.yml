@@ -16,9 +16,9 @@ jobs:
         run: | # Install npm packages and build the Storybook files
           yarn install
           yarn predeploy
-      - name: Move Storybook directory
+      - name: Move Storybook directory 🐾
         run : |
-          mv ./docs
+          cd ./docs
       - name: Deploy 🚀
         uses: peaceiris/actions-gh-pages@v3.8.0
         with:
