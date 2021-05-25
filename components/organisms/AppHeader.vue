@@ -6,7 +6,7 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropType } from "vue"
+import Vue from "vue"
 import Logo from "../atoms/Logo.vue"
 
 export default Vue.extend({
