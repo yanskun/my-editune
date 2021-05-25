@@ -22,6 +22,7 @@ exports[`Switch snapshot true 1`] = `
   inactiveiconclass=""
   name=""
   validateevent="true"
+  value="true"
   width="40"
 />
 `;

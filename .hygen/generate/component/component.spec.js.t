@@ -7,7 +7,7 @@ import Component from "~/components/<%= level %>/<%= h.changeCase.pascalCase(nam
 describe("<%= h.changeCase.pascal(name) %>", () => {
   test("snapshot", () => {
     const wrapper = shallowMount(Component, {
-      props: {},
+      propsData: {},
     })
     expect(wrapper.element).toMatchSnapshot()
   })
