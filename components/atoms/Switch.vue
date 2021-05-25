@@ -7,12 +7,8 @@
 
 <script lang="ts">
 import Vue from "vue"
-import { Switch } from "element-ui"
 
 export default Vue.extend({
-  components: {
-    "el-switch": Switch
-  },
   model: {
     prop: "value",
     event: "change"

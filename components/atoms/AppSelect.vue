@@ -5,7 +5,6 @@
 
 <script lang="ts">
 import Vue, { PropType } from "vue"
-import { Select, Option as ElOption } from "element-ui"
 
 export type Option = {
   value: string
@@ -13,10 +12,6 @@ export type Option = {
 }
 
 export default Vue.extend({
-  components: {
-    "el-select": Select,
-    "el-option": ElOption
-  },
   model: {
     prop: "value",
     event: "change"

@@ -9,7 +9,6 @@
 
 <script lang="ts">
 import Vue, { PropType } from "vue"
-import { Input } from "element-ui"
 
 type DataType = {
   handleValue?: string | number
@@ -18,10 +17,6 @@ type DataType = {
 type InputType = "text" | "number"
 
 export default Vue.extend({
-  components: {
-    "el-input": Input
-  },
-
   model: {
     prop: "value",
     event: "change"

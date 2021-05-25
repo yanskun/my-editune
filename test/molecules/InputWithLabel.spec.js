@@ -1,5 +1,9 @@
-import { shallowMount } from "@vue/test-utils"
+import { createLocalVue, shallowMount } from "@vue/test-utils"
+import ElementUI from "element-ui"
 import Component from "~/components/molecules/InputWithLabel.vue"
+
+const localVue = createLocalVue()
+localVue.use(ElementUI)
 
 describe("InputWithLabel", () => {
   test("snapshot text", () => {
@@ -7,7 +11,8 @@ describe("InputWithLabel", () => {
       propsData: {
         value: "test",
         label: "test label"
-      }
+      },
+      localVue
     })
     expect(wrapper.element).toMatchSnapshot()
   })
@@ -18,7 +23,8 @@ describe("InputWithLabel", () => {
         label: "test label",
         value: 0,
         type: "number"
-      }
+      },
+      localVue
     })
     expect(wrapper.element).toMatchSnapshot()
   })
