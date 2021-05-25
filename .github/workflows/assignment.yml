@@ -1,0 +1,25 @@
+name: "Assign PR Author as Assignee, "
+
+on:
+  pull_request:
+    types: [opened, ready_for_review, reopened]
+
+jobs:
+  assign-pr-author-as-assignee:
+    runs-on: ubuntu-latest
+    steps:
+      - name: "Assign Author as Assignee"
+        uses: itsOliverBott/assign-pr-author-as-assignee@latest
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+  add-reviewers:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Add Reviewers
+        uses: madrapps/add-reviewers@v1
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          reviewers: yasudanaoya
+          re-request-when-approved: true
+          re-request-when-changes-requested: true
