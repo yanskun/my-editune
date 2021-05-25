@@ -18,7 +18,7 @@ updates:
     - automerge
   ignore:
     - dependency-name: "node-sass"
-      versions: ["5.x"]
+      versions: ["5.x", "6.x"]
     - dependency-name: "sass-loader"
       versions: ["11.x"]
 
