@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AppHeader snapshot 1`] = `
+<el-header-stub
+  class="header"
+  height="60px"
+>
+  <logo-stub
+    width="10%"
+  />
+</el-header-stub>
+`;
