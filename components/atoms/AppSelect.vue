@@ -19,7 +19,7 @@ export default Vue.extend({
   },
   model: {
     prop: "value",
-    event: "on-change"
+    event: "change"
   },
 
   props: {
@@ -58,7 +58,7 @@ export default Vue.extend({
 
   methods: {
     onChange (newValue: string) {
-      this.$emit("on-change", newValue)
+      this.$emit("change", newValue)
     }
   }
 })

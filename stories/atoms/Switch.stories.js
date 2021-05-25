@@ -1,3 +1,4 @@
+import { action } from "@storybook/addon-actions"
 import { withKnobs } from "@storybook/addon-knobs"
 import Switch from "../../components/atoms/Switch"
 
@@ -14,8 +15,11 @@ export const Basic = () => {
         value: true
       }
     },
+    methods: {
+      onChange: action("change")
+    },
     template: `
-      <el-switch :value="value" @change="value = $event" />
+      <el-switch :value="value" @change="onChange" />
     `
   }
 }
