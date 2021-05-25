@@ -2,6 +2,7 @@
 to: stories/<%= level %>/<%= h.changeCase.pascalCase(name) %>.stories.js
 ---
 import { withKnobs } from "@storybook/addon-knobs"
+import { action } from "@storybook/addon-actions"
 import <%= h.changeCase.pascalCase(name) %> from "../../components/<%= level %>/<%= h.changeCase.pascalCase(name) %>"
 
 export default {

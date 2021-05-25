@@ -1,14 +1,10 @@
+import { action } from "@storybook/addon-actions"
 import { object, text, withKnobs } from "@storybook/addon-knobs"
 import AppSelect from "../../components/atoms/AppSelect"
 
 export default {
   title: "Atoms/AppSelect",
-  decorators: [withKnobs],
-  argTypes: {
-    onChange: {
-      action: "onChange"
-    }
-  }
+  decorators: [withKnobs]
 }
 
 export const Basic = () => {
@@ -36,8 +32,11 @@ export const Basic = () => {
         value: ""
       }
     },
+    methods: {
+      onChange: action("change")
+    },
     template: `
-      <AppSelect :value="value" :placeholder="placeholder" :options="options" @on-change="value = $event" />
+      <AppSelect :value="value" :placeholder="placeholder" :options="options" @change="onChange" />
     `
   }
 }
