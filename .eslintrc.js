@@ -18,6 +18,7 @@ module.exports = {
   rules: {
     quotes: ["error", "double"],
     "comma-dangle": ["error", "never"],
-    "@typescript-eslint/explicit-module-boundary-types": ["off"]
+    "@typescript-eslint/explicit-module-boundary-types": ["off"],
+    "space-before-function-paren": ["off"]
   }
 }
