@@ -6,6 +6,7 @@ on:
 
 jobs:
   assign-pr-author-as-assignee:
+    if: github.actor!= 'dependabot-preview[bot]'
     runs-on: ubuntu-latest
     steps:
       - name: "Assign Author as Assignee"
@@ -14,6 +15,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
   add-reviewers:
+    if: github.actor!= 'dependabot-preview[bot]'
     runs-on: ubuntu-latest
     steps:
       - name: Add Reviewers
