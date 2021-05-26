@@ -3,7 +3,7 @@ module.exports = [
     type: 'select',
     name: 'level',
     message: 'Choose a level',
-    choices: ['atoms', 'molecules', 'organisms'],
+    choices: ['atoms', 'molecules', 'organisms', 'templates'],
   },
   {
     type: 'input',
