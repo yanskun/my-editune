@@ -2,9 +2,10 @@
   .input-with-label
     el-input.input(
       v-model='handleValue'
-      @change='onChange'
+      @change='handleChange'
       :type="type"
     )
+    p.label {{ label }}
 </template>
 
 <script lang="ts">
@@ -38,7 +39,7 @@ export default Vue.extend({
     }
   },
 
-  data ():DataType {
+  data(): DataType {
     return {
       handleValue: undefined
     }
@@ -47,14 +48,14 @@ export default Vue.extend({
   watch: {
     value: {
       immediate: true,
-      handler (newValue?: string | number) {
+      handler(newValue?: string | number) {
         this.handleValue = newValue
       }
     }
   },
 
   methods: {
-    onChange (newValue?: string | number) {
+    handleChange(newValue?: string | number) {
       this.$emit("change", newValue)
     }
   }
@@ -67,6 +68,7 @@ export default Vue.extend({
 
   .input {
     align-self: center;
+    width: 10%;
   }
 
   .label {

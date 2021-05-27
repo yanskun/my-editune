@@ -1,5 +1,5 @@
 <template lang="pug">
-  el-select(v-model='handleValue' :placeholder='placeholder' @change='onChange')
+  el-select(v-model='handleValue' :placeholder='placeholder' @change='handleChange')
     el-option(v-for='item in options' :label="item.label" :value="item.value" :key='item.value')
 </template>
 
@@ -52,7 +52,7 @@ export default Vue.extend({
   },
 
   methods: {
-    onChange (newValue: string) {
+    handleChange (newValue: string) {
       this.$emit("change", newValue)
     }
   }
