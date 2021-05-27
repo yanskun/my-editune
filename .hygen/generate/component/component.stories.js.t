@@ -7,7 +7,7 @@ import <%= h.changeCase.pascalCase(name) %> from "../../components/<%= level %>/
 
 export default {
   title: "<%= h.changeCase.pascalCase(level) %>/<%= h.changeCase.pascalCase(name) %>",
-  decorators: [withKnobs],
+  decorators: [withKnobs]<% if (level === 'templates') , -%>
   <% if (level === 'templates') { -%>
     parameters: {
       layout: 'fullscreen',

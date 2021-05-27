@@ -11,6 +11,11 @@ exports[`InputWithLabel snapshot number 1`] = `
     validateevent="true"
     value="0"
   />
+  <p
+    class="label"
+  >
+    test label
+  </p>
 </div>
 `;
 
@@ -25,5 +30,10 @@ exports[`InputWithLabel snapshot text 1`] = `
     validateevent="true"
     value="test"
   />
+  <p
+    class="label"
+  >
+    test label
+  </p>
 </div>
 `;

@@ -32,7 +32,7 @@ export default Vue.extend({
     }
   },
 
-  data () {
+  data() {
     return {
       handleValue: true
     }
@@ -41,14 +41,14 @@ export default Vue.extend({
   watch: {
     value: {
       immediate: true,
-      handler (newValue: boolean) {
+      handler(newValue: boolean) {
         this.handleValue = newValue
       }
     }
   },
 
   methods: {
-    onChange (newValue: boolean) {
+    onChange(newValue: boolean) {
       this.$emit("change", newValue)
     }
   }
@@ -61,11 +61,12 @@ export default Vue.extend({
 
   .switch {
     align-self: center;
+    width: 10%;
+    justify-content: center;
   }
 
   .label {
     margin-left: 10px;
   }
 }
-
 </style>
