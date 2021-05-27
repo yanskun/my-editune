@@ -1,8 +1,6 @@
 <template lang="pug">
   el-header.header
-    logo(
-      width="10%"
-    )
+    logo.logo
 </template>
 
 <script lang="ts">
@@ -18,9 +16,13 @@ export default Vue.extend({
 
 <style lang="scss" scoped>
 .header {
-  padding: 1vw 10vw;
+  padding: 8px 50px;
+  height: 100px;
   display: flex;
   justify-content: space-between;
-  background: #E3E3DD;
+  background: #e3e3dd;
+}
+.logo {
+  height: 100%;
 }
 </style>

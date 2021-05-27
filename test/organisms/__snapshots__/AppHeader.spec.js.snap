@@ -6,7 +6,7 @@ exports[`AppHeader snapshot 1`] = `
   height="60px"
 >
   <logo-stub
-    width="10%"
+    class="logo"
   />
 </el-header-stub>
 `;
