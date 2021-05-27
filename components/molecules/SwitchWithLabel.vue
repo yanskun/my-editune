@@ -2,7 +2,7 @@
   .switch-with-label
     app-switch.switch(
       v-model="handleValue"
-      @change="onChange"
+      @change="handleChange"
     )
     p.label {{ label }}
 </template>
@@ -48,7 +48,7 @@ export default Vue.extend({
   },
 
   methods: {
-    onChange(newValue: boolean) {
+    handleChange(newValue: boolean) {
       this.$emit("change", newValue)
     }
   }

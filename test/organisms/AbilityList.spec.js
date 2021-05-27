@@ -11,11 +11,13 @@ describe("AbilityList", () => {
       propsData: {
         abilities: [{
           value: false,
-          label: "test"
+          label: "test",
+          key: "test"
         },
         {
           value: 1,
-          label: "test"
+          label: "test",
+          key: "test"
         }]
       },
       localVue

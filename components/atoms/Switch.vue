@@ -1,7 +1,7 @@
 <template lang="pug">
   el-switch(
     v-model="handleValue"
-    @change='onChange'
+    @change='handleChange'
   )
 </template>
 
@@ -21,7 +21,7 @@ export default Vue.extend({
     }
   },
 
-  data () {
+  data() {
     return {
       handleValue: true
     }
@@ -30,14 +30,14 @@ export default Vue.extend({
   watch: {
     value: {
       immediate: true,
-      handler (newValue: boolean) {
+      handler(newValue: boolean) {
         this.handleValue = newValue
       }
     }
   },
 
   methods: {
-    onChange (newValue: boolean) {
+    handleChange(newValue: boolean) {
       this.$emit("change", newValue)
     }
   }

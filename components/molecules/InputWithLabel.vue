@@ -2,7 +2,7 @@
   .input-with-label
     el-input.input(
       v-model='handleValue'
-      @change='onChange'
+      @change='handleChange'
       :type="type"
     )
     p.label {{ label }}
@@ -55,7 +55,7 @@ export default Vue.extend({
   },
 
   methods: {
-    onChange(newValue?: string | number) {
+    handleChange(newValue?: string | number) {
       this.$emit("change", newValue)
     }
   }

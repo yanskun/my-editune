@@ -1,4 +1,5 @@
 import { object, withKnobs } from "@storybook/addon-knobs"
+import { action } from "@storybook/addon-actions"
 import AbilityList from "../../components/organisms/AbilityList"
 
 export default {
@@ -14,25 +15,32 @@ export const Basic = () => {
         default: object("ability", [
           {
             value: true,
-            label: "switch"
+            label: "switch",
+            key: "switch1"
           },
           {
             value: false,
-            label: "switch"
+            label: "switch",
+            key: "switch2"
           },
           {
             value: 1,
-            label: "number"
+            label: "number",
+            key: "number"
           },
           {
             value: "string",
-            label: "text"
+            label: "text",
+            key: "text"
           }
         ])
       }
     },
+    methods: {
+      onChange: action("change")
+    },
     template: `
-      <AbilityList :abilities="abilities" />
+      <AbilityList :abilities="abilities" @change="onChange" />
     `
   }
 }
