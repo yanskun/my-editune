@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Top snapshot 1`] = `
+<div>
+  <app-header-stub />
+  <el-container-stub>
+    <ability-list-stub
+      abilities="[object Object],[object Object]"
+    />
+  </el-container-stub>
+</div>
+`;
