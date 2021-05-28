@@ -9,7 +9,7 @@
         switch-with-label(
           :value="ability.value"
           :label="ability.label"
-          @change="handleChange($event, ability.key)"
+          @change="$emit('change', { newValue: $event, key: ability.key })"
         )
       template(
         v-else
@@ -18,7 +18,7 @@
           :value="ability.value"
           :label="ability.label"
           :type="getImputType(ability)"
-          @change="handleChange($event, ability.key)"
+          @change="$emit('change', { newValue:$event, key: ability.key })"
         )
 </template>
 
@@ -28,7 +28,7 @@ import { AbilityValue } from "../../assets/AppType"
 import InputWithLabel from "../molecules/InputWithLabel.vue"
 import SwitchWithLabel from "../molecules/SwitchWithLabel.vue"
 
-type Ability = {
+export type Ability = {
   value: AbilityValue
   label: string
   key: string
@@ -62,10 +62,6 @@ export default Vue.extend({
         default:
           return ""
       }
-    },
-
-    handleChange(newValue: Ability, key: string) {
-      this.$emit("change", { newValue, key })
     }
   }
 })
