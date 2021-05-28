@@ -1,6 +1,8 @@
 <template lang="pug">
   el-header.header
-    logo.logo
+    logo.logo(
+      color="white"
+    )
 </template>
 
 <script lang="ts">
@@ -20,7 +22,7 @@ export default Vue.extend({
   height: 100px;
   display: flex;
   justify-content: space-between;
-  background: #e3e3dd;
+  background-color: #303133;
 }
 .logo {
   height: 100%;

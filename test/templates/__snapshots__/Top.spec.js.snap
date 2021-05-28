@@ -1,12 +1,28 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Top snapshot 1`] = `
-<div>
-  <app-header-stub />
-  <el-container-stub>
+<div
+  class="root"
+>
+  <div
+    class="container"
+  >
     <ability-list-stub
       abilities="[object Object],[object Object]"
+      class="list"
     />
-  </el-container-stub>
+    <div
+      class="button-wrapper"
+    >
+      <el-button-stub
+        class="generate-button"
+        icon=""
+        nativetype="button"
+        type="infor"
+      >
+        設定ファイルの生成
+      </el-button-stub>
+    </div>
+  </div>
 </div>
 `;

@@ -6,11 +6,24 @@ export default {
   decorators: [withKnobs]
 }
 
-export const Basic = () => {
+export const White = () => {
   return {
     components: { Logo },
     template: `
+      <div style="background-color: black;"> 
       <Logo />
+      </div>
+    `
+  }
+}
+
+export const Black = () => {
+  return {
+    components: { Logo },
+    template: `
+      <div>
+      <Logo color="black" />
+      </div>
     `
   }
 }

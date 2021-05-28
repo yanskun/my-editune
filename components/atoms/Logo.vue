@@ -7,7 +7,7 @@
   >
     <g
       transform="translate(0.000000,218.000000) scale(0.100000,-0.100000)"
-      fill="#000000"
+      :fill="convertColorCode"
       stroke="none"
     >
       <path
@@ -111,3 +111,31 @@ c18 0 44 4 58 10 l26 10 0 134 c0 170 -12 230 -55 273 -47 47 -114 41 -177
     </g>
   </svg>
 </template>
+
+<script lang="ts">
+import Vue, { PropType } from "vue"
+
+type Color = "white" | "black"
+
+export default Vue.extend({
+  props: {
+    color: {
+      type: String as PropType<Color>,
+      required: false,
+      default: "white"
+    }
+  },
+
+  computed: {
+    convertColorCode() {
+      switch (this.color) {
+        case "black":
+          return "#000000"
+        case "white":
+        default:
+          return "#ffffff"
+      }
+    }
+  }
+})
+</script>

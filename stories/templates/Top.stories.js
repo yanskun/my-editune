@@ -40,10 +40,15 @@ export const Basic = () => {
       }
     },
     methods: {
-      onChange: action("change")
+      onChangeValue: action("change value"),
+      onClickGenerate: action("click generate")
     },
     template: `
-      <Top :abilities="abilities" @change="onChange" />
+      <Top
+        :abilities="abilities"
+        @change-value="onChangeValue"
+        @click-generate="onClickGenerate"
+      />
     `
   }
 }

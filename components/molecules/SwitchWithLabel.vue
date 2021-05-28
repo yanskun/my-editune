@@ -1,6 +1,6 @@
 <template lang="pug">
   .switch-with-label
-    app-switch.switch(
+    el-switch.switch(
       v-model="handleValue"
       @change="handleChange"
     )
@@ -9,13 +9,8 @@
 
 <script lang="ts">
 import Vue from "vue"
-import Switch from "../atoms/Switch.vue"
 
 export default Vue.extend({
-  components: {
-    "app-switch": Switch
-  },
-
   model: {
     prop: "value",
     event: "change"

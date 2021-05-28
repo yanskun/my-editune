@@ -4,9 +4,17 @@ exports[`SwitchWithLabel snapshot 1`] = `
 <div
   class="switch-with-label"
 >
-  <app-switch-stub
+  <el-switch-stub
+    activecolor=""
+    activeiconclass=""
+    activevalue="true"
     class="switch"
+    inactivecolor=""
+    inactiveiconclass=""
+    name=""
+    validateevent="true"
     value="true"
+    width="40"
   />
   <p
     class="label"

@@ -1,11 +1,16 @@
 <template lang="pug">
-  div
-    app-header
-    el-container
-      ability-list(
+  .root
+    .container
+      ability-list.list(
         :abilities="abilities"
-        @change="$emit('change', $event)"
+        @change="$emit('change-value', $event)"
       )
+      .button-wrapper
+        el-button.generate-button(
+          type="infor"
+          @click="$emit('click-generate')"
+        )
+          | 設定ファイルの生成
 </template>
 
 <script lang="ts">
@@ -29,7 +34,27 @@ export default Vue.extend({
 </script>
 
 <style lang="scss" scoped>
-.container {
-  display: flex;
+.root {
+  height: 100%;
+  .container {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px 20px;
+    flex-direction: column;
+
+    .list {
+      height: 70%;
+      width: 100%;
+    }
+    .button-wrapper {
+      display: flex;
+      justify-content: center;
+
+      .generate-button {
+        width: 200px;
+      }
+    }
+  }
 }
 </style>
