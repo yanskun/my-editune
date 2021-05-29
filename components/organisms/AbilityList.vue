@@ -24,7 +24,7 @@
 
 <script lang="ts">
 import Vue, { PropType } from "vue"
-import { AbilityValue } from "../../assets/AppType"
+import { AbilityValue } from "../../assets/types/AppType"
 import InputWithLabel from "../molecules/InputWithLabel.vue"
 import SwitchWithLabel from "../molecules/SwitchWithLabel.vue"
 
