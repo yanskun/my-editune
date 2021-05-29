@@ -1,7 +1,13 @@
-type State = {
-  settingsJson: {
-    [key: string]: string | number | boolean
+export type Setting = {
+  [key: string]: {
+    key: string
+    value: string | number | boolean
+    label: string
   }
+}
+
+export type State = {
+  settings: Setting
 }
 
 type Payload = {
@@ -9,29 +15,47 @@ type Payload = {
   value: string | number | boolean
 }
 
-const settingsList: string[] = [
-  "trimWhiteSpace",
-  "tabSize",
-  "DnD",
-  "minimap",
-  "insertNewLine",
-  "trimFinalLines"
-]
-
 export const state: State = {
-  settingsJson: {
-    "files.trimTrailingWhitespace": true,
-    "editor.tabSize": 2,
-    "editor.dragAndDrop": false,
-    "editor.minimap.enabled": false,
-    "files.insertFinalNewline": true,
-    "files.trimFinalNewlines": true
+  settings: {
+    trimWhiteSpace: {
+      label: "保存時に、文末の無駄なスペースを削除する",
+      value: true,
+      key: "files.trimTrailingWhitespace"
+    },
+    tabSize: {
+      label: "タブスペースのサイズ",
+      value: 2,
+      key: "editor.tabSize"
+    },
+    DnD: {
+      label: "選択範囲のドラックアンドドロップを有効にする",
+      value: false,
+      key: "editor.dragAndDrop"
+    },
+    minimap: {
+      label: "ミニマップを表示",
+      value: false,
+      key: "editor.minimap.enabled"
+    },
+    insertNewLine: {
+      label: "保存時に、最終行に空行を入れる",
+      value: true,
+      key: "files.insertFinalNewline"
+    },
+    trimFinalLines: {
+      label: "保存時に、最終行以外の空行を削除する",
+      value: true,
+      key: "files.trimFinalNewlines"
+    }
   }
 }
 
 export const mutations = {
   changeSetting(state: State, payload: Payload) {
-    const index = settingsList.indexOf(payload.key)
-    state.settingsJson[Object.keys(state.settingsJson)[index]] = payload.value
+    if (payload.key in state.settings) {
+      state.settings[payload.key].value = payload.value
+    } else {
+      // error handle
+    }
   }
 }
