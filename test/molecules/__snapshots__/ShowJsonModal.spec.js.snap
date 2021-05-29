@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ShowJsonModal snapshot 1`] = `
+<el-dialog-stub
+  closeonclickmodal="true"
+  closeonpressescape="true"
+  customclass=""
+  lockscroll="true"
+  modal="true"
+  modalappendtobody="true"
+  modalfade="true"
+  showclose="true"
+  title=""
+  top="15vh"
+  visible="true"
+>
+  <span>
+    <el-button-stub
+      icon=""
+      nativetype="button"
+      type="default"
+    >
+      閉じる
+    </el-button-stub>
+    <el-button-stub
+      icon=""
+      nativetype="button"
+      type="default"
+    >
+      コピーする
+    </el-button-stub>
+  </span>
+</el-dialog-stub>
+`;
