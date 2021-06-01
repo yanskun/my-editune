@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HighlightJson snapshot 1`] = `
+<pre>
+  {
+	
+  <span
+    class="hljs-attr"
+  >
+    "string"
+  </span>
+  : 
+  <span
+    class="hljs-string"
+  >
+    "value"
+  </span>
+  ,
+	
+  <span
+    class="hljs-attr"
+  >
+    "number"
+  </span>
+  : 
+  <span
+    class="hljs-number"
+  >
+    0
+  </span>
+  ,
+	
+  <span
+    class="hljs-attr"
+  >
+    "boolean"
+  </span>
+  : 
+  <span
+    class="hljs-literal"
+  >
+    false
+  </span>
+  
+}
+</pre>
+`;
