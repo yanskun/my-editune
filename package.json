@@ -70,7 +70,8 @@
     "stylelint-config-standard": "^22.0.0",
     "vue-jest": "^3.0.4",
     "vue-loader": "^15.9.6",
-    "vue-template-compiler": "^2.6.12"
+    "vue-template-compiler": "^2.6.12",
+    "vuex-module-decorators": "^1.0.1"
   },
   "eslintConfig": {
     "root": true,
