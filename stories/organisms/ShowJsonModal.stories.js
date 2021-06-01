@@ -1,9 +1,9 @@
 import { object, withKnobs } from "@storybook/addon-knobs"
 import { action } from "@storybook/addon-actions"
-import ShowJsonModal from "../../components/molecules/ShowJsonModal"
+import ShowJsonModal from "../../components/organisms/ShowJsonModal"
 
 export default {
-  title: "Molecules/ShowJsonModal",
+  title: "Organisms/ShowJsonModal",
   decorators: [withKnobs]
 }
 
@@ -13,6 +13,13 @@ export const Basic = () => {
     props: {
       abilities: {
         default: object("abilities", [])
+      },
+      json: {
+        default: object("json", {
+          string: "value",
+          number: 0,
+          boolean: false
+        })
       }
     },
     data() {
@@ -32,6 +39,7 @@ export const Basic = () => {
         <ShowJsonModal
           :open="open"
           :abilities="abilities"
+          :json="json"
           @click-close="onClickClose"
           @click-copy="onClickCopy"
         />
