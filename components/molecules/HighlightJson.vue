@@ -7,7 +7,7 @@ import Vue, { PropType } from "vue"
 import highlightjs from "highlight.js"
 import { AbilityValue } from "../../assets/types/AppType"
 
-type Json = {
+export type Json = {
   [key: string]: AbilityValue
 }
 

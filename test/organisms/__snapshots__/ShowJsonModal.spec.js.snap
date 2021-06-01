@@ -15,6 +15,11 @@ exports[`ShowJsonModal snapshot 1`] = `
   visible="true"
 >
   <span>
+    <highlight-json-stub
+      json="[object Object]"
+    />
+  </span>
+  <span>
     <el-button-stub
       icon=""
       nativetype="button"
