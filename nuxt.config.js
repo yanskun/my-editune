@@ -16,7 +16,6 @@ export default {
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
     "element-ui/lib/theme-chalk/index.css",
-    "~/node_modules/highlight.js/styles/isbl-editor-light.css",
     "@/assets/styles/application.scss"
   ],
 
