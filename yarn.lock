@@ -2117,10 +2117,10 @@
     webpack-node-externals "^3.0.0"
     webpackbar "^4.0.0"
 
-"@nuxtjs/axios@^5.13.5":
-  version "5.13.5"
-  resolved "https://registry.yarnpkg.com/@nuxtjs/axios/-/axios-5.13.5.tgz"
-  integrity sha512-GyeuiseDCwfRGDQH/gK+lngCseZS3SQm3q6xqiVx5xQnzCqokojN3uJkNB0DdHCowBP1aim+mDhu3spzcCnyBg==
+"@nuxtjs/axios@^5.13.6":
+  version "5.13.6"
+  resolved "https://registry.yarnpkg.com/@nuxtjs/axios/-/axios-5.13.6.tgz#6f4bbd98a3a7799a5d2c0726c6ad2a98aa111881"
+  integrity sha512-XS+pOE0xsDODs1zAIbo95A0LKlilvJi8YW0NoXYuq3/jjxGgWDxizZ6Yx0AIIjZOoGsXJOPc0/BcnSEUQ2mFBA==
   dependencies:
     "@nuxtjs/proxy" "^2.1.0"
     axios "^0.21.1"
@@ -2568,15 +2568,15 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/cli@6.3.0-beta.7":
-  version "6.3.0-beta.7"
-  resolved "https://registry.yarnpkg.com/@storybook/cli/-/cli-6.3.0-beta.7.tgz#a3eccf6a120f5758a0681193a25323ba13b76c45"
-  integrity sha512-VoPu4/ybV74NBXKz/rXsuKeqTHyvDfNwszBp7/xhJ6PY9XL/lz8idiAg0loygYMM4Q34ASwo2C2DZvNhe4Ntrg==
+"@storybook/cli@6.3.0-beta.10":
+  version "6.3.0-beta.10"
+  resolved "https://registry.yarnpkg.com/@storybook/cli/-/cli-6.3.0-beta.10.tgz#9a9054ea7fc7e14a18b3b0cb6556ea2132032624"
+  integrity sha512-VYXMSPVL05SmnAKqnNljc2W8NE5AchidFAKOmHfhaRkpMfnNY6VphnLUfEsY2hkWBk1lRfeIzOMOU1pPLgngCg==
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/preset-env" "^7.12.11"
-    "@storybook/codemod" "6.3.0-beta.7"
-    "@storybook/node-logger" "6.3.0-beta.7"
+    "@storybook/codemod" "6.3.0-beta.10"
+    "@storybook/node-logger" "6.3.0-beta.10"
     "@storybook/semver" "^7.3.2"
     boxen "^4.2.0"
     chalk "^4.1.0"
@@ -2632,14 +2632,14 @@
     core-js "^3.8.2"
     global "^4.4.0"
 
-"@storybook/codemod@6.3.0-beta.7":
-  version "6.3.0-beta.7"
-  resolved "https://registry.yarnpkg.com/@storybook/codemod/-/codemod-6.3.0-beta.7.tgz#c6a52824a3d94f535ad64b0a30a6de85092597b2"
-  integrity sha512-d8R5lieTRqxfzrrM/Hznn6WYji/sLJlpIa3v1BOGENmN19kGkAFmVrTOf7XNfoRea5BR53RqJIpMGLqYoikV/Q==
+"@storybook/codemod@6.3.0-beta.10":
+  version "6.3.0-beta.10"
+  resolved "https://registry.yarnpkg.com/@storybook/codemod/-/codemod-6.3.0-beta.10.tgz#3b7f9d7b77fc7ea8490f4dbcdd31d75694f6cb93"
+  integrity sha512-AHgAuBcdf7Ps8rXY9jG2y7S30+RETGfgUOqoKzD1KXFdw1nPwl2fN5FniruNpv5zJSMq5OLqhgjPYWmBzojhow==
   dependencies:
     "@mdx-js/mdx" "^1.6.22"
     "@storybook/csf" "0.0.1"
-    "@storybook/node-logger" "6.3.0-beta.7"
+    "@storybook/node-logger" "6.3.0-beta.10"
     core-js "^3.8.2"
     cross-spawn "^7.0.3"
     globby "^11.0.2"
@@ -2847,10 +2847,10 @@
     npmlog "^4.1.2"
     pretty-hrtime "^1.0.3"
 
-"@storybook/node-logger@6.3.0-beta.7":
-  version "6.3.0-beta.7"
-  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-6.3.0-beta.7.tgz#aafbda58c16980fcad4753f38505cd4737f93e28"
-  integrity sha512-wN74DWhxBkr2AV+8fL37ih6LjT8RUUGYLKyGqGNjGpEzuspuC25T1xM2ya4d13ZG8rf6YG1Kfi8XDFAhTz4dWg==
+"@storybook/node-logger@6.3.0-beta.10":
+  version "6.3.0-beta.10"
+  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-6.3.0-beta.10.tgz#c8ffe0513e4d9b84a088a7405415cef1014cfcbb"
+  integrity sha512-GK2Wm4EGB/+yEGuKLD9W1FCgUj2lz2fDSm+5sVS0TJ2YKKQGPb+C14SzsUDnY3fMBtEWYKNHVFudNz7pZhrftQ==
   dependencies:
     "@types/npmlog" "^4.1.2"
     chalk "^4.1.0"
@@ -15784,12 +15784,12 @@ store2@^2.12.0:
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.12.0.tgz"
   integrity sha512-7t+/wpKLanLzSnQPX8WAcuLCCeuSHoWdQuh9SB3xD0kNOM38DNf+0Oa+wmvxmYueRzkmh6IcdKFtvTa+ecgPDw==
 
-storybook@^6.3.0-beta.7:
-  version "6.3.0-beta.7"
-  resolved "https://registry.yarnpkg.com/storybook/-/storybook-6.3.0-beta.7.tgz#6aeba0a17b8ed36d68c235020470a26ca5ac5cbf"
-  integrity sha512-KUvt1/7LsO+PC1Jl6qbEsn1Dvhl9Onu9Wlyf7au+8n8bWKcNl3K1hDzg4wW4vJ0fOs/kV7IZeCWy3nqzn3WlzA==
+storybook@^6.3.0-beta.10:
+  version "6.3.0-beta.10"
+  resolved "https://registry.yarnpkg.com/storybook/-/storybook-6.3.0-beta.10.tgz#b00a6bec3c2013e03e3679c54d13c321911001e5"
+  integrity sha512-KtSnZlRrMjW3eGMZXD+B7b73gf68rii5WZr8B18OH9G6Foq29hF1z0tovkSuGOgvaxYiwwDuDmQHv9omE3dt8A==
   dependencies:
-    "@storybook/cli" "6.3.0-beta.7"
+    "@storybook/cli" "6.3.0-beta.10"
 
 stream-browserify@^2.0.1:
   version "2.0.2"
