@@ -37,17 +37,34 @@ export const Basic = () => {
             key: "text"
           }
         ])
+      },
+      json: {
+        default: object("json", {
+          string: "value",
+          number: 0,
+          boolean: false
+        })
+      }
+    },
+    data() {
+      return {
+        showJsonModal: false
       }
     },
     methods: {
       onChangeValue: action("change value"),
-      onClickGenerate: action("click generate")
+      onClickGenerate: action("click generate"),
+      onClickCopy: action("click copy")
     },
     template: `
       <Top
         :abilities="abilities"
+        :json="json"
+        :show-json-modal="showJsonModal"
         @change-value="onChangeValue"
-        @click-generate="onClickGenerate"
+        @click-generate="showJsonModal = true"
+        @click-close="showJsonModal = false"
+        @click-copy="onClickCopy"
       />
     `
   }
