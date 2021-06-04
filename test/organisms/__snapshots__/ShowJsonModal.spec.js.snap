@@ -9,7 +9,6 @@ exports[`ShowJsonModal snapshot 1`] = `
   modal="true"
   modalappendtobody="true"
   modalfade="true"
-  showclose="true"
   title=""
   top="15vh"
   visible="true"

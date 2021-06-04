@@ -9,7 +9,6 @@ describe("ShowJsonModal", () => {
   test("snapshot", () => {
     const wrapper = shallowMount(Component, {
       propsData: {
-        abilities: [],
         open: true,
         json: {
           string: "value",

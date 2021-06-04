@@ -11,9 +11,6 @@ export const Basic = () => {
   return {
     components: { ShowJsonModal },
     props: {
-      abilities: {
-        default: object("abilities", [])
-      },
       json: {
         default: object("json", {
           string: "value",
@@ -38,7 +35,6 @@ export const Basic = () => {
         <el-button @click="open = true">click here</el-button>
         <ShowJsonModal
           :open="open"
-          :abilities="abilities"
           :json="json"
           @click-close="onClickClose"
           @click-copy="onClickCopy"

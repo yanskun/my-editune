@@ -1,6 +1,7 @@
 <template lang="pug">
   el-dialog(
     :visible="open"
+    :show-close="false"
   )
     span
       highlight-json(
@@ -21,13 +22,7 @@
 
 <script lang="ts">
 import Vue, { PropType } from "vue"
-import { AbilityValue } from "../../assets/types/AppType"
 import HighlightJson, { Json } from "../molecules/HighlightJson.vue"
-
-type Ability = {
-  key: string
-  value: AbilityValue
-}
 
 export default Vue.extend({
   components: {
@@ -36,10 +31,6 @@ export default Vue.extend({
   props: {
     json: {
       type: Object as PropType<Json>,
-      required: true
-    },
-    abilities: {
-      type: Array as PropType<Ability[]>,
       required: true
     },
     open: {
