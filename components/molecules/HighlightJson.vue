@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropType } from "vue"
+import { defineComponent, PropType, computed } from "@vue/composition-api"
 import highlightjs from "highlight.js"
 import { AbilityValue } from "../../assets/types/AppType"
 
@@ -11,7 +11,7 @@ export type Json = {
   [key: string]: AbilityValue
 }
 
-export default Vue.extend({
+export default defineComponent({
   props: {
     json: {
       type: Object as PropType<Json>,
@@ -19,13 +19,17 @@ export default Vue.extend({
     }
   },
 
-  computed: {
-    generateHighlight() {
+  setup(props) {
+    const generateHighlight = computed(() => {
       const value = highlightjs.highlightAuto(
-        JSON.stringify(this.json, null, "\t"),
+        JSON.stringify(props.json, null, "\t"),
         ["JSON"]
       ).value
       return value
+    })
+
+    return {
+      generateHighlight
     }
   }
 })

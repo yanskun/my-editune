@@ -9,15 +9,20 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropType } from "vue"
-
-type DataType = {
-  handleValue?: string | number
-}
+import {
+  defineComponent,
+  PropType,
+  reactive,
+  watchEffect
+} from "@vue/composition-api"
 
 type InputType = "text" | "number"
 
-export default Vue.extend({
+type State = {
+  handleValue?: string | number
+}
+
+export default defineComponent({
   model: {
     prop: "value",
     event: "change"
@@ -39,24 +44,20 @@ export default Vue.extend({
     }
   },
 
-  data(): DataType {
+  setup(props, { emit }) {
+    const state = reactive<State>({})
+
+    const handleChange = (newValue?: string | number) => {
+      emit("change", newValue)
+    }
+
+    watchEffect(() => {
+      state.handleValue = props.value
+    })
+
     return {
-      handleValue: undefined
-    }
-  },
-
-  watch: {
-    value: {
-      immediate: true,
-      handler(newValue?: string | number) {
-        this.handleValue = newValue
-      }
-    }
-  },
-
-  methods: {
-    handleChange(newValue?: string | number) {
-      this.$emit("change", newValue)
+      ...state,
+      handleChange
     }
   }
 })

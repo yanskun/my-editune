@@ -1,9 +1,11 @@
 import { createLocalVue, shallowMount } from "@vue/test-utils"
 import ElementUI from "element-ui"
+import VueCompositionApi from "@vue/composition-api"
 import Component from "~/components/organisms/AbilityList"
 
 const localVue = createLocalVue()
 localVue.use(ElementUI)
+localVue.use(VueCompositionApi)
 
 describe("AbilityList", () => {
   test("snapshot", () => {

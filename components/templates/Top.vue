@@ -20,13 +20,13 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropType } from "vue"
+import { defineComponent, PropType } from "@vue/composition-api"
 import AppHeader from "../organisms/AppHeader.vue"
 import AbilityList, { Ability } from "../organisms/AbilityList.vue"
 import ShowJsonModal from "../organisms/ShowJsonModal.vue"
 import { Json } from "../molecules/HighlightJson.vue"
 
-export default Vue.extend({
+export default defineComponent({
   components: {
     AppHeader,
     AbilityList,
