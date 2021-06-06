@@ -16,10 +16,9 @@
     "build:storybook": "yarn build-storybook -o ./docs",
     "snapshot": "jest --updateSnapshot",
     "hygen": "hygen generate component",
-    "build-storybook": "build-storybook",
     "prepare": "husky install",
     "pre-commit-lint": "yarn check-types && yarn lint-staged",
-    "predeploy": "yarn build:storybook"
+    "deploy:storybook": "gh-pages -d ./docs"
   },
   "dependencies": {
     "@nuxt/content": "^1.14.0",
@@ -56,6 +55,7 @@
     "eslint-plugin-nuxt": "^2.0.0",
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-vue": "^7.10.0",
+    "gh-pages": "^3.2.0",
     "husky": "^6.0.0",
     "hygen": "^6.1.0",
     "jest": "^26.6.3",
@@ -73,6 +73,9 @@
     "vue-loader": "^15.9.6",
     "vue-template-compiler": "^2.6.12",
     "vuex-module-decorators": "^1.0.1"
+  },
+  "engines": {
+    "npm": "please_use_yarn_instead"
   },
   "eslintConfig": {
     "root": true,
