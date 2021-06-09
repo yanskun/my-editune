@@ -2612,15 +2612,15 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/cli@6.3.0-beta.17":
-  version "6.3.0-beta.17"
-  resolved "https://registry.yarnpkg.com/@storybook/cli/-/cli-6.3.0-beta.17.tgz#c2499daf47c798a7add54248b28843c86a40ed9f"
-  integrity sha512-iiqW+E6tq/hkdNH0m3acU2xAXx5PPvvk+LFCxAoZz526AHJTke7QuYk37snyEwe1BMZMHDa7zs30L8F7E1UG7A==
+"@storybook/cli@6.3.0-rc.0":
+  version "6.3.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@storybook/cli/-/cli-6.3.0-rc.0.tgz#c4285bc8afeb047f4fe2cd5cea5906f992ab14a0"
+  integrity sha512-vfrl2aZWbDX6/4RTUoUeB4pcGCGpHt163pCJ3ZIvn3fTF88dUQ2+T0uxN9eJob3pPzKgrMF5sXF9JgnVuhEhEQ==
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/preset-env" "^7.12.11"
-    "@storybook/codemod" "6.3.0-beta.17"
-    "@storybook/node-logger" "6.3.0-beta.17"
+    "@storybook/codemod" "6.3.0-rc.0"
+    "@storybook/node-logger" "6.3.0-rc.0"
     "@storybook/semver" "^7.3.2"
     boxen "^4.2.0"
     chalk "^4.1.0"
@@ -2676,14 +2676,14 @@
     core-js "^3.8.2"
     global "^4.4.0"
 
-"@storybook/codemod@6.3.0-beta.17":
-  version "6.3.0-beta.17"
-  resolved "https://registry.yarnpkg.com/@storybook/codemod/-/codemod-6.3.0-beta.17.tgz#8da29770e345fe512daeb14aaca23a4e8ed291f3"
-  integrity sha512-VpB33G3AzJ6J8eeMXJxuvuFXJ5W/jD8Gzv4sHw5FlVJhPyh+QDqxyso4pehSHPzSpl5gUhDjPzHc8na9XU54ng==
+"@storybook/codemod@6.3.0-rc.0":
+  version "6.3.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@storybook/codemod/-/codemod-6.3.0-rc.0.tgz#cc754092be0db8b20dc8d73250fbb0939eca78ac"
+  integrity sha512-72aDA2kb3Z7qGWW3RbYiqGRarhdcFfr85D8CHDs1m5SnH9Gr/KQo506I7szZrUM0dI3uHAO3fTCvUKskoF4cjA==
   dependencies:
     "@mdx-js/mdx" "^1.6.22"
     "@storybook/csf" "0.0.1"
-    "@storybook/node-logger" "6.3.0-beta.17"
+    "@storybook/node-logger" "6.3.0-rc.0"
     core-js "^3.8.2"
     cross-spawn "^7.0.3"
     globby "^11.0.2"
@@ -2891,10 +2891,10 @@
     npmlog "^4.1.2"
     pretty-hrtime "^1.0.3"
 
-"@storybook/node-logger@6.3.0-beta.17":
-  version "6.3.0-beta.17"
-  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-6.3.0-beta.17.tgz#0a54cf2cdb060abbe420c10001ae554b46d7a843"
-  integrity sha512-wCreOB60wtGFCqncBDLbw548tCBO9hjZMNk0xTHssp7brgVE7As38fnIgKFThyiq4BhrPLrZ4kmVIFCJrJBGmw==
+"@storybook/node-logger@6.3.0-rc.0":
+  version "6.3.0-rc.0"
+  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-6.3.0-rc.0.tgz#be8fa764dd6d30dce79ca0a469cf4915c4f6081d"
+  integrity sha512-7jX+b6alU5Gq4M8DD9JN7ZaHe1rxFkH890rFOrsFSohDLzLF4PNY2xfYxIXom+QttwQQms0n7MsWU7PkPQeLfQ==
   dependencies:
     "@types/npmlog" "^4.1.2"
     chalk "^4.1.0"
@@ -15870,12 +15870,12 @@ store2@^2.12.0:
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.12.0.tgz"
   integrity sha512-7t+/wpKLanLzSnQPX8WAcuLCCeuSHoWdQuh9SB3xD0kNOM38DNf+0Oa+wmvxmYueRzkmh6IcdKFtvTa+ecgPDw==
 
-storybook@^6.3.0-beta.17:
-  version "6.3.0-beta.17"
-  resolved "https://registry.yarnpkg.com/storybook/-/storybook-6.3.0-beta.17.tgz#bbb77a892441926ce949f1bb227511e2dc9db1e5"
-  integrity sha512-JVUJytnRMUBTn24EtmR2bI5yUaKSYqSVreaKpa6aDv3VjBxvQuqxm7Vqt+R1rNGFov6F/YxEMNwvy/xzAFMSeQ==
+storybook@^6.3.0-rc.0:
+  version "6.3.0-rc.0"
+  resolved "https://registry.yarnpkg.com/storybook/-/storybook-6.3.0-rc.0.tgz#0c6d38038bf456441aea917a4374830323b59e4f"
+  integrity sha512-ciV+4DDBXUW3iOaeYdONuffqA7EULQ13TywigxWa6eaSmZZICyUFDNxOgfuMwsjNmuznWkw+1nbhY27L2xUBAw==
   dependencies:
-    "@storybook/cli" "6.3.0-beta.17"
+    "@storybook/cli" "6.3.0-rc.0"
 
 stream-browserify@^2.0.1:
   version "2.0.2"
