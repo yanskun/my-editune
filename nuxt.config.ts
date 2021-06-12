@@ -110,6 +110,7 @@ const config: NuxtConfig = {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    standalone: true,
     transpile: [/^element-ui/]
   }
 }
