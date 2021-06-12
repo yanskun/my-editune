@@ -18,37 +18,45 @@ export type State = {
 }
 
 export default function settingsStore() {
-  const state = reactive({
+  const state = reactive<State>({
     settings: {
       trimWhiteSpace: {
-        label: "保存時に、文末の無駄なスペースを削除する",
+        label: "有効にすると、ファイルの保存時に末尾の空白をトリミングします。",
         value: true,
         key: "files.trimTrailingWhitespace"
       },
       tabSize: {
-        label: "タブスペースのサイズ",
+        label: "1 つのタブに相当するスペースの数。",
         value: 2,
         key: "editor.tabSize"
       },
       DnD: {
-        label: "選択範囲のドラックアンドドロップを有効にする",
+        label:
+          "ドラッグ アンド ドロップによる選択範囲の移動をエディターが許可するかどうかを制御します。",
         value: false,
         key: "editor.dragAndDrop"
       },
       minimap: {
-        label: "ミニマップを表示",
+        label: "ミニマップを表示するかどうかを制御します。",
         value: false,
         key: "editor.minimap.enabled"
       },
       insertNewLine: {
-        label: "保存時に、最終行に空行を入れる",
+        label: "有効にすると、ファイルの保存時に最新の行を末尾に挿入します。",
         value: true,
         key: "files.insertFinalNewline"
       },
       trimFinalLines: {
-        label: "保存時に、最終行以外の空行を削除する",
+        label:
+          "有効にすると、ファイルの保存時に最終行以降の新しい行をトリミングします。",
         value: true,
         key: "files.trimFinalNewlines"
+      },
+      explorerConfirm: {
+        label:
+          "ごみ箱を経由したファイル削除時にエクスプローラーが確認を求めるかどうかを制御します。",
+        value: true,
+        key: "explorer.confirmDelete"
       }
     }
   })

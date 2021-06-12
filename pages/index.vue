@@ -16,6 +16,7 @@ import { Notification } from "element-ui"
 import useClipboard from "vue-clipboard3"
 import SettingsStore, { Payload } from "../store/settings"
 import TopTemplate from "../components/templates/Top.vue"
+import { Json } from "../components/molecules/HighlightJson.vue"
 
 type State = {
   showJsonModal: boolean
@@ -29,12 +30,25 @@ export default defineComponent({
   setup(_) {
     const { toClipboard } = useClipboard()
     const store = SettingsStore()
-    const abilities = computed(() => store.settings)
-    const json = computed(() => {
+    const abilities = computed(() => {
+      return store.settings
+    })
+    const json = computed<Json>(() => {
       let result = {}
-      const mappedState = Object.entries(abilities.value).map(([_, v]) => {
-        return { [v.key]: v.value }
-      })
+      const mappedState = Object.entries(abilities.value)
+        .map(([_, v]) => {
+          return v
+        })
+        .sort(function (a, b) {
+          if (a.key < b.key) {
+            return -1
+          } else {
+            return 1
+          }
+        })
+        .map((v) => {
+          return { [v.key]: v.value }
+        })
 
       mappedState.forEach((i) => {
         result = { ...result, ...i }
