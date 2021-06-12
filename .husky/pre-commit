@@ -4,7 +4,7 @@
 for EXTENSION in `git diff --cached --name-only | sed 's/^.*\.\([^\.]*\)$/\1/'`; do
   TARGET=('js' "ts" "tsx")
   if [[ " ${TARGET[@]} " =~ " ${EXTENSION} " ]]; then
-    yarn test
+    # yarn test
     yarn lint --max-warnings=0
     break
   fi
