@@ -5,6 +5,13 @@
 </div>
 <br>
 
+## architecture
+
+### front-end
+- Nuxt.js
+- TypeScript
+- Composition-API
+
 ## Links
 - [my editune](https://myeditune.com/)
 - [storybook](https://yasudanaoya.github.io/my-editune/)
