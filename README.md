@@ -11,6 +11,13 @@
 - Nuxt.js
 - TypeScript
 - Composition-API
+- Storybook
+- Element UI
+
+### other
+hosting
+- Netlify
+
 
 ## Links
 - [my editune](https://myeditune.com/)
