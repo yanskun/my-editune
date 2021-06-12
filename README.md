@@ -1,20 +1,10 @@
-# my-editune
 
-## Build Setup
+<div style="height: 200px; text-align: center;">
+  <img src="./assets/images/logo.svg" alt="logo" />
+  初心者開発者向けの、Visual Studio Code の設定ファイルジェネレーター
+</div>
+<br>
 
-```bash
-# install dependencies
-$ yarn install
-
-# serve with hot reload at localhost:3000
-$ yarn dev
-
-# build for production and launch server
-$ yarn build
-$ yarn start
-
-# generate static project
-$ yarn generate
-```
-
-For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+## Links
+- [my editune](https://myeditune.com/)
+- [storybook](https://yasudanaoya.github.io/my-editune/)
