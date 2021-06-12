@@ -1,7 +1,7 @@
 
-<div style="height: 200px; text-align: center;">
-  <img src="./assets/images/logo.svg" alt="logo" />
-  初心者開発者向けの、Visual Studio Code の設定ファイルジェネレーター
+<div style="text-align: center;">
+  <img src="./assets/images/logo.svg" alt="logo" height="200px" />
+  <p>初心者開発者向けの、Visual Studio Code の設定ファイルジェネレーター</p>
 </div>
 <br>
 
