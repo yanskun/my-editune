@@ -1,25 +1,22 @@
 <template lang="pug">
   top-template(
     :abilities="abilities"
+    :json="json"
+    :showJsonModal="state.showJsonModal"
     @change-value="handleChangeValue"
+    @click-generate="handleClickGenerate"
+    @click-close="handleClickClose"
+    @click-copy="handleClickCopy"
   )
 </template>
 
 <script lang="ts">
 import { computed, defineComponent, reactive } from "@vue/composition-api"
-import { mapMutations } from "vuex"
-import { AbilityValue } from "../assets/types/AppType"
+import SettingsStore, { Payload } from "../store/settings"
 import TopTemplate from "../components/templates/Top.vue"
-import { Setting } from "../store/settings"
-import { Ability } from "~/components/organisms/AbilityList.vue"
-
-type ChangeEvent = {
-  newValue: AbilityValue
-  key: string
-}
 
 type State = {
-  abilities: Ability[]
+  showJsonModal: boolean
 }
 
 export default defineComponent({
@@ -27,59 +24,47 @@ export default defineComponent({
     TopTemplate
   },
 
-  setup() {
-    const state = reactive<State>({
-      abilities: [
-        {
-          value: true,
-          label: "switch",
-          key: "switch1"
-        },
-        {
-          value: false,
-          label: "switch",
-          key: "switch2"
-        },
-        {
-          value: 1,
-          label: "number",
-          key: "number"
-        },
-        {
-          value: "string",
-          label: "text",
-          key: "text"
-        }
-      ]
+  setup(_) {
+    const store = SettingsStore()
+    const abilities = computed(() => store.settings)
+    const json = computed(() => {
+      let result = {}
+      const mappedState = Object.entries(abilities.value).map(([_, v]) => {
+        return { [v.key]: v.value }
+      })
+
+      mappedState.forEach((i) => {
+        result = { ...result, ...i }
+      })
+      return result
     })
 
-    const getSettings = computed(() => {
-      const settings: Setting = this.$store.state.settings.settings
-      return Object.values(settings).map((v) => {
-        return {
-          value: v.value,
-          label: v.label
-        }
-      })
-    })
+    const state = reactive<State>({ showJsonModal: false })
+
+    const handleChangeValue = (params: Payload) => {
+      store.changeSettings(store, params)
+    }
+
+    const handleClickGenerate = () => {
+      state.showJsonModal = true
+    }
+
+    const handleClickClose = () => {
+      state.showJsonModal = false
+    }
+
+    const handleClickCopy = () => {
+      // TODO: copy logic
+    }
 
     return {
-      ...state,
-
-      getSettings
-    }
-  },
-
-  methods: {
-    ...mapMutations({
-      changeSetting: "settings/changeSetting"
-    }),
-    handleChangeValue(event: ChangeEvent) {
-      const param = {
-        key: event.key,
-        value: event.newValue
-      }
-      this.changeSetting(param)
+      state,
+      abilities,
+      json,
+      handleChangeValue,
+      handleClickGenerate,
+      handleClickClose,
+      handleClickCopy
     }
   }
 })

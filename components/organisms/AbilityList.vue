@@ -47,8 +47,8 @@ export default defineComponent({
     }
   },
 
-  setup() {
-    const getInputType = (ability: Ability): string => {
+  methods: {
+    getInputType(ability: Ability): string {
       const type = typeof ability.value
       switch (type) {
         case "string":
@@ -58,10 +58,6 @@ export default defineComponent({
         default:
           return ""
       }
-    }
-
-    return {
-      getInputType
     }
   }
 })
