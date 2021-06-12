@@ -57,6 +57,27 @@ export default function settingsStore() {
           "ごみ箱を経由したファイル削除時にエクスプローラーが確認を求めるかどうかを制御します。",
         value: true,
         key: "explorer.confirmDelete"
+      },
+      formatOnType: {
+        label:
+          "エディターで入力後に自動的に行のフォーマットを行うかどうかを制御します。",
+        value: true,
+        key: "editor.formatOnType"
+      },
+      formatOnSave: {
+        label: "ファイルを保存するときにフォーマットします。",
+        value: true,
+        key: "editor.formatOnSave"
+      },
+      insertSpaces: {
+        label: "Tab キーを押すとスペースが挿入されます。",
+        value: true,
+        key: "editor.insertSpaces"
+      },
+      breadcrumbs: {
+        label: "ナビゲーション階層リンクを有効/無効にします。",
+        value: true,
+        key: "breadcrumbs.enabled"
       }
     }
   })

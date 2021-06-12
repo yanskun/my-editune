@@ -32,12 +32,8 @@ export default defineComponent({
     const { toClipboard } = useClipboard()
     const store = SettingsStore()
     const abilities = computed<Ability[]>(() => {
-      return Object.entries(store.settings).map(([_, v]) => v)
-    })
-    const json = computed<Json>(() => {
-      let result = {}
-      const mappedState = abilities.value
-        .slice()
+      return Object.entries(store.settings)
+        .map(([_, v]) => v)
         .sort(function (a, b) {
           if (a.key < b.key) {
             return -1
@@ -45,9 +41,12 @@ export default defineComponent({
             return 1
           }
         })
-        .map((v) => {
-          return { [v.key]: v.value }
-        })
+    })
+    const json = computed<Json>(() => {
+      let result = {}
+      const mappedState = abilities.value.map((v) => {
+        return { [v.key]: v.value }
+      })
       mappedState.forEach((i) => {
         result = { ...result, ...i }
       })
