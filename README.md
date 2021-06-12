@@ -15,7 +15,6 @@
 - Element UI
 
 ### other
-hosting
 - Netlify
 
 
