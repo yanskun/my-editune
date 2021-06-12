@@ -1,4 +1,4 @@
-name: deploy-storybook
+name: Deploy Storybook
 
 on:
   push:
