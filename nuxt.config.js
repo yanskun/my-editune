@@ -8,7 +8,12 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "" }
+      { hid: "description", name: "description", content: "初心者向け、Visual Studio Code の設定ファイルジェネレーター" },
+      { hid: "og:site_name", property: "og:site_name", content: "my-editune" },
+      { hid: "og:type", property: "og:type", content: "website" },
+      { hid: "og:url", property: "og:url", content: "https://myeditune.com/" },
+      { hid: "og:description", property: "og:description", content: "初心者向け、Visual Studio Code の設定ファイルジェネレーター" },
+      { hid: "og:image", property: "og:image", content: "https://raw.githubusercontent.com/yasudanaoya/my-editune/36892faabb0105219622b592502a66808aa34933/assets/images/logo.svg" }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
