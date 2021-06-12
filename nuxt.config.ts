@@ -1,4 +1,6 @@
-export default {
+import { NuxtConfig } from "@nuxt/types"
+
+const config: NuxtConfig = {
   // Disable server-side rendering: https://go.nuxtjs.dev/ssr-mode
   ssr: false,
 
@@ -8,12 +10,25 @@ export default {
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { hid: "description", name: "description", content: "初心者向け、Visual Studio Code の設定ファイルジェネレーター" },
+      {
+        hid: "description",
+        name: "description",
+        content: "初心者向け、Visual Studio Code の設定ファイルジェネレーター"
+      },
       { hid: "og:site_name", property: "og:site_name", content: "my-editune" },
       { hid: "og:type", property: "og:type", content: "website" },
       { hid: "og:url", property: "og:url", content: "https://myeditune.com/" },
-      { hid: "og:description", property: "og:description", content: "初心者向け、Visual Studio Code の設定ファイルジェネレーター" },
-      { hid: "og:image", property: "og:image", content: "https://raw.githubusercontent.com/yasudanaoya/my-editune/36892faabb0105219622b592502a66808aa34933/assets/images/logo.svg" }
+      {
+        hid: "og:description",
+        property: "og:description",
+        content: "初心者向け、Visual Studio Code の設定ファイルジェネレーター"
+      },
+      {
+        hid: "og:image",
+        property: "og:image",
+        content:
+          "https://raw.githubusercontent.com/yasudanaoya/my-editune/36892faabb0105219622b592502a66808aa34933/assets/images/logo.svg"
+      }
     ],
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
@@ -25,7 +40,11 @@ export default {
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ["~/plugins/composition-api", "@/plugins/element-ui", "@/plugins/vue-highlightjs"],
+  plugins: [
+    "~/plugins/composition-api",
+    "@/plugins/element-ui",
+    "@/plugins/vue-highlightjs"
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -79,6 +98,9 @@ export default {
     typeCheck: {
       eslint: {
         files: "./**/*.{ts,js,vue}"
+      },
+      typescript: {
+        memoryLimit: 4096
       }
     }
   },
@@ -91,3 +113,5 @@ export default {
     transpile: [/^element-ui/]
   }
 }
+
+export default config
