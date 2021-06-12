@@ -47,8 +47,23 @@ export default {
     // https://go.nuxtjs.dev/pwa
     "@nuxtjs/pwa",
     // https://go.nuxtjs.dev/content
-    "@nuxt/content"
+    "@nuxt/content",
+    "@nuxtjs/google-gtag"
   ],
+
+  // https://github.com/nuxt-community/google-gtag-module?
+  "google-gtag": {
+    id: "G-0E5FY8C386",
+    config: {
+      anonymize_ip: true, // anonymize IP
+      send_page_view: false, // might be necessary to avoid duplicated page track on page reload
+      linker: {
+        domains: ["domain.com", "domain.org"]
+      }
+    },
+    debug: true, // enable to track in dev mode
+    disableAutoPageTrack: false // disable if you don't want to track each page route with router.afterEach(...).
+  },
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
