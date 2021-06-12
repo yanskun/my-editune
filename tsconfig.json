@@ -24,8 +24,9 @@
     },
     "types": [
       "@types/node",
-      "@nuxt/types"
-    ]
+      "@nuxt/types",
+    ],
+    "typeRoots": ["assets/types"]
   },
   "exclude": [
     "node_modules"

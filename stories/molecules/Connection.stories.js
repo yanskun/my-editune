@@ -1,5 +1,6 @@
 import { object, withKnobs } from "@storybook/addon-knobs"
 import Connection from "../../components/molecules/Connection"
+import SNSIcon from "../../assets/images/icons"
 
 export default {
   title: "Molecules/Connection",
@@ -13,9 +14,14 @@ export const Basic = () => {
       icons: {
         default: object("icons", [
           {
-            src: "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+            src: SNSIcon.github,
             alt: "GitHub",
             href: "https://github.com/"
+          },
+          {
+            src: SNSIcon.twitter,
+            alt: "Twitter",
+            href: "https://twitter.com/"
           }
         ])
       }

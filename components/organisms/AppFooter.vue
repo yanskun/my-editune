@@ -25,6 +25,9 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .footer {
+  width: 100vw;
+  position: absolute;
+  bottom: 0;
   padding: 8px 50px;
   height: 100px;
   display: flex;

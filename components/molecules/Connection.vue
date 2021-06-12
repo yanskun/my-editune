@@ -32,12 +32,18 @@ export default defineComponent({
 </script>
 
 <style lang="scss" scoped>
-.icons {
+.connection {
+  width: 100%;
+  align-items: center;
   display: flex;
-  .image {
-    height: 40px;
-    width: 40px;
-    margin: 0 0.5vw;
+  .icons {
+    margin: 0 0 0 auto;
+    display: flex;
+    .image {
+      height: 40px;
+      width: 40px;
+      margin: 0 0.5vw;
+    }
   }
 }
 </style>
