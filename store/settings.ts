@@ -5,7 +5,7 @@ export type Payload = {
   key: string
 }
 
-type Setting = {
+export type Setting = {
   [key: string]: {
     key: string
     value: string | number | boolean
