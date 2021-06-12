@@ -12,6 +12,8 @@
 
 <script lang="ts">
 import { computed, defineComponent, reactive } from "@vue/composition-api"
+import { Notification } from "element-ui"
+import useClipboard from "vue-clipboard3"
 import SettingsStore, { Payload } from "../store/settings"
 import TopTemplate from "../components/templates/Top.vue"
 
@@ -25,6 +27,7 @@ export default defineComponent({
   },
 
   setup(_) {
+    const { toClipboard } = useClipboard()
     const store = SettingsStore()
     const abilities = computed(() => store.settings)
     const json = computed(() => {
@@ -53,8 +56,22 @@ export default defineComponent({
       state.showJsonModal = false
     }
 
-    const handleClickCopy = () => {
-      // TODO: copy logic
+    const handleClickCopy = async () => {
+      try {
+        await toClipboard(JSON.stringify(json.value))
+        Notification.success({
+          title: "コピー成功",
+          message:
+            "作成した json データを\nクリップボードにコピーしました。\n\nVSCode を起動し\n設定ファイルに貼り付けてください。",
+          customClass: "notificate"
+        })
+      } catch (e) {
+        Notification.error({
+          title: "コピー失敗",
+          message: "管理者に連絡してください",
+          customClass: "notificate"
+        })
+      }
     }
 
     return {
@@ -69,3 +86,9 @@ export default defineComponent({
   }
 })
 </script>
+
+<style lang="scss">
+.notificate {
+  white-space: pre;
+}
+</style>
