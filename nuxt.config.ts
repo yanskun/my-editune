@@ -29,7 +29,11 @@ const config: NuxtConfig = {
         content:
           "https://raw.githubusercontent.com/yasudanaoya/my-editune/36892faabb0105219622b592502a66808aa34933/assets/images/logo.svg"
       }
-    ],
+    ].concat(
+      process.env.NODE_ENV === "staging"
+        ? [{ hid: "robots", name: "robots", content: "noindex" }]
+        : []
+    ),
     link: [{ rel: "icon", type: "image/x-icon", href: "/favicon.ico" }]
   },
 
