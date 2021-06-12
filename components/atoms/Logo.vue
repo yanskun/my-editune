@@ -113,11 +113,11 @@ c18 0 44 4 58 10 l26 10 0 134 c0 170 -12 230 -55 273 -47 47 -114 41 -177
 </template>
 
 <script lang="ts">
-import Vue, { PropType } from "vue"
+import { defineComponent, PropType, computed } from "@vue/composition-api"
 
 type Color = "white" | "black"
 
-export default Vue.extend({
+export default defineComponent({
   props: {
     color: {
       type: String as PropType<Color>,
@@ -126,15 +126,19 @@ export default Vue.extend({
     }
   },
 
-  computed: {
-    convertColorCode() {
-      switch (this.color) {
+  setup(props) {
+    const convertColorCode = computed(() => {
+      switch (props.color) {
         case "black":
           return "#000000"
         case "white":
         default:
           return "#ffffff"
       }
+    })
+
+    return {
+      convertColorCode
     }
   }
 })

@@ -9,7 +9,6 @@ exports[`InputWithLabel snapshot number 1`] = `
     class="input"
     type="number"
     validateevent="true"
-    value="0"
   />
   <p
     class="label"
@@ -28,7 +27,6 @@ exports[`InputWithLabel snapshot text 1`] = `
     class="input"
     type="text"
     validateevent="true"
-    value="test"
   />
   <p
     class="label"

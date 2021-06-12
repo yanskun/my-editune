@@ -5,9 +5,9 @@ to: components/<%= level %>/<%= h.changeCase.pascalCase(name) %>.vue
 </template>
 
 <script lang="ts">
-import Vue, { PropType } from "vue"
+import { defineComponent, PropType } from "@vue/composition-api"
 
-export default Vue.extend({})
+export default defineComponent({})
 </script>
 
 <style lang="scss" scoped>

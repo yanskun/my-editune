@@ -8,9 +8,13 @@
 </template>
 
 <script lang="ts">
-import Vue from "vue"
+import { defineComponent, reactive, watchEffect } from "@vue/composition-api"
 
-export default Vue.extend({
+type State = {
+  handleValue: boolean
+}
+
+export default defineComponent({
   model: {
     prop: "value",
     event: "change"
@@ -27,24 +31,22 @@ export default Vue.extend({
     }
   },
 
-  data() {
-    return {
+  setup(props, { emit }) {
+    const state = reactive<State>({
       handleValue: true
-    }
-  },
+    })
 
-  watch: {
-    value: {
-      immediate: true,
-      handler(newValue: boolean) {
-        this.handleValue = newValue
-      }
+    const handleChange = (newValue: boolean) => {
+      emit("change", newValue)
     }
-  },
 
-  methods: {
-    handleChange(newValue: boolean) {
-      this.$emit("change", newValue)
+    watchEffect(() => {
+      state.handleValue = props.value
+    })
+
+    return {
+      ...state,
+      handleChange
     }
   }
 })

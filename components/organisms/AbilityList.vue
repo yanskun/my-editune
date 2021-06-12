@@ -4,7 +4,7 @@
       v-for="ability in abilities"
     )
       template(
-        v-if="getAbilityType(ability) === 'boolean'"
+        v-if="typeof ability.value === 'boolean'"
       )
         switch-with-label(
           :value="ability.value"
@@ -17,13 +17,13 @@
         input-with-label(
           :value="ability.value"
           :label="ability.label"
-          :type="getImputType(ability)"
+          :type="getInputType(ability)"
           @change="$emit('change', { newValue:$event, key: ability.key })"
         )
 </template>
 
 <script lang="ts">
-import Vue, { PropType } from "vue"
+import { defineComponent, PropType } from "@vue/composition-api"
 import { AbilityValue } from "../../assets/types/AppType"
 import InputWithLabel from "../molecules/InputWithLabel.vue"
 import SwitchWithLabel from "../molecules/SwitchWithLabel.vue"
@@ -34,7 +34,7 @@ export type Ability = {
   key: string
 }
 
-export default Vue.extend({
+export default defineComponent({
   components: {
     InputWithLabel,
     SwitchWithLabel
@@ -48,11 +48,7 @@ export default Vue.extend({
   },
 
   methods: {
-    getAbilityType(ability: Ability): string {
-      return typeof ability.value
-    },
-
-    getImputType(ability: Ability): string {
+    getInputType(ability: Ability): string {
       const type = typeof ability.value
       switch (type) {
         case "string":

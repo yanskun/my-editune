@@ -21,10 +21,10 @@
 </template>
 
 <script lang="ts">
-import Vue, { PropType } from "vue"
+import { defineComponent, PropType } from "@vue/composition-api"
 import HighlightJson, { Json } from "../molecules/HighlightJson.vue"
 
-export default Vue.extend({
+export default defineComponent({
   components: {
     HighlightJson
   },
