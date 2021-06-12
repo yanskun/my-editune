@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Connection snapshot 1`] = `
+<div
+  class="connection"
+>
+  <div
+    class="icons"
+  >
+    <div
+      class="icon"
+    >
+      <a
+        href="https://github.com/"
+        target="_blank"
+      >
+        <el-image-stub
+          alt="GitHub"
+          class="image"
+          previewsrclist=""
+          src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+          zindex="2000"
+        />
+      </a>
+    </div>
+  </div>
+</div>
+`;
