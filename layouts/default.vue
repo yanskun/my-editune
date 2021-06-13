@@ -25,7 +25,7 @@ export default defineComponent({
       {
         src: SNSIcon.github,
         alt: "GitHub",
-        href: "https://github.com/yasudanaoya"
+        href: "https://github.com/yasudanaoya/my-editune"
       },
       {
         src: SNSIcon.twitter,
