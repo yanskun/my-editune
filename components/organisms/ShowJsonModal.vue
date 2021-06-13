@@ -1,7 +1,8 @@
 <template lang="pug">
-  el-dialog.modal(
+  el-dialog(
     :visible="open"
     :show-close="false"
+    custom-class="modal"
   )
     span
       highlight-json.json(
