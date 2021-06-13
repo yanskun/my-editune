@@ -42,7 +42,7 @@ export default defineComponent({
 })
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .modal {
   min-width: 80%;
   .json {
