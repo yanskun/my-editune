@@ -66,6 +66,7 @@ export default defineComponent({
     }
   }
   .button-wrapper {
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
 
