@@ -59,6 +59,7 @@ export default defineComponent({
   .switch {
     align-self: center;
     width: 10%;
+    min-width: 50px;
     justify-content: center;
   }
 

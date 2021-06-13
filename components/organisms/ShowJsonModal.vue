@@ -2,9 +2,10 @@
   el-dialog(
     :visible="open"
     :show-close="false"
+    custom-class="modal"
   )
     span
-      highlight-json(
+      highlight-json.json(
         :json="json"
       )
     span(
@@ -40,3 +41,12 @@ export default defineComponent({
   }
 })
 </script>
+
+<style lang="scss">
+.modal {
+  min-width: 80%;
+  .json {
+    overflow: scroll;
+  }
+}
+</style>
