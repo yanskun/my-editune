@@ -70,6 +70,7 @@ export default defineComponent({
   .input {
     align-self: center;
     width: 10%;
+    min-width: 50px;
   }
 
   .label {
