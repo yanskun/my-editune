@@ -1,10 +1,10 @@
 <template lang="pug">
-  el-dialog(
+  el-dialog.modal(
     :visible="open"
     :show-close="false"
   )
     span
-      highlight-json(
+      highlight-json.json(
         :json="json"
       )
     span(
@@ -40,3 +40,12 @@ export default defineComponent({
   }
 })
 </script>
+
+<style lang="scss" scoped>
+.modal {
+  min-width: 80%;
+  .json {
+    overflow: scroll;
+  }
+}
+</style>
