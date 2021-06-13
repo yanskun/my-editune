@@ -5,12 +5,12 @@
         :abilities="abilities"
         @change="$emit('change-value', $event)"
       )
-      .button-wrapper
-        el-button.generate-button(
-          type="infor"
-          @click="$emit('click-generate')"
-        )
-          | 設定ファイルの生成
+    .button-wrapper
+      el-button.generate-button(
+        type="infor"
+        @click="$emit('click-generate')"
+      )
+        | 設定ファイルの生成
     show-json-modal(
       :json="json"
       :open="showJsonModal"
@@ -52,9 +52,9 @@ export default defineComponent({
 
 <style lang="scss" scoped>
 .root {
-  height: 100%;
+  height: calc(100vh - 120px);
+  overflow-y: scroll;
   .container {
-    height: 100%;
     width: 100%;
     box-sizing: border-box;
     padding: 10px 20px;
@@ -64,13 +64,13 @@ export default defineComponent({
       height: 70%;
       width: 100%;
     }
-    .button-wrapper {
-      display: flex;
-      justify-content: center;
+  }
+  .button-wrapper {
+    display: flex;
+    justify-content: center;
 
-      .generate-button {
-        width: 200px;
-      }
+    .generate-button {
+      width: 200px;
     }
   }
 }
