@@ -11,18 +11,18 @@ exports[`Top snapshot 1`] = `
       abilities="[object Object],[object Object]"
       class="list"
     />
-    <div
-      class="button-wrapper"
+  </div>
+  <div
+    class="button-wrapper"
+  >
+    <el-button-stub
+      class="generate-button"
+      icon=""
+      nativetype="button"
+      type="infor"
     >
-      <el-button-stub
-        class="generate-button"
-        icon=""
-        nativetype="button"
-        type="infor"
-      >
-        設定ファイルの生成
-      </el-button-stub>
-    </div>
+      設定ファイルの生成
+    </el-button-stub>
   </div>
   <show-json-modal-stub />
 </div>

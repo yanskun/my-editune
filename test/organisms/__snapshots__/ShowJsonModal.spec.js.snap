@@ -4,7 +4,7 @@ exports[`ShowJsonModal snapshot 1`] = `
 <el-dialog-stub
   closeonclickmodal="true"
   closeonpressescape="true"
-  customclass=""
+  customclass="modal"
   lockscroll="true"
   modal="true"
   modalappendtobody="true"
@@ -15,6 +15,7 @@ exports[`ShowJsonModal snapshot 1`] = `
 >
   <span>
     <highlight-json-stub
+      class="json"
       json="[object Object]"
     />
   </span>
