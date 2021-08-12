@@ -2077,10 +2077,10 @@
     rc9 "^1.2.0"
     std-env "^2.3.0"
 
-"@nuxt/types@^2.15.2", "@nuxt/types@^2.15.7":
-  version "2.15.7"
-  resolved "https://registry.yarnpkg.com/@nuxt/types/-/types-2.15.7.tgz#b5275e183ba8c046d3a97e57198c4103109b889e"
-  integrity sha512-jqExebL4Dh5Rn88xVP1/o/a4gxpF7Z1O/kbVjEzEbbvt2E8J0lLc3wsaRYpbqt+S3S9YfvD8FKR85TzkqYtgqw==
+"@nuxt/types@^2.15.2", "@nuxt/types@^2.15.8":
+  version "2.15.8"
+  resolved "https://registry.yarnpkg.com/@nuxt/types/-/types-2.15.8.tgz#1249de448f68169fe17e9379ee7b5caa0eb336b0"
+  integrity sha512-zBAG5Fy+SIaZIerOVF1vxy1zz16ZK07QSbsuQAjdtEFlvr+vKK+0AqCv8r8DBY5IVqdMIaw5FgNUz5py0xWdPg==
   dependencies:
     "@types/autoprefixer" "9.7.2"
     "@types/babel__core" "7.1.14"
@@ -3065,26 +3065,6 @@
     "@storybook/core-client" "6.3.7"
     "@storybook/core-server" "6.3.7"
 
-"@storybook/csf-tools@6.3.6":
-  version "6.3.6"
-  resolved "https://registry.yarnpkg.com/@storybook/csf-tools/-/csf-tools-6.3.6.tgz#603d9e832f946998b75ff8368fe862375d6cb52c"
-  integrity sha512-MQevelkEUVNCSjKMXLNc/G8q/BB5babPnSeI0IcJq4k+kLUSHtviimLNpPowMgGJBPx/y9VihH8N7vdJUWVj9w==
-  dependencies:
-    "@babel/generator" "^7.12.11"
-    "@babel/parser" "^7.12.11"
-    "@babel/plugin-transform-react-jsx" "^7.12.12"
-    "@babel/preset-env" "^7.12.11"
-    "@babel/traverse" "^7.12.11"
-    "@babel/types" "^7.12.11"
-    "@mdx-js/mdx" "^1.6.22"
-    "@storybook/csf" "^0.0.1"
-    core-js "^3.8.2"
-    fs-extra "^9.0.1"
-    js-string-escape "^1.0.1"
-    lodash "^4.17.20"
-    prettier "~2.2.1"
-    regenerator-runtime "^0.13.7"
-
 "@storybook/csf-tools@6.3.7":
   version "6.3.7"
   resolved "https://registry.yarnpkg.com/@storybook/csf-tools/-/csf-tools-6.3.7.tgz#505514d211f8698c47ddb15662442098b4b00156"
@@ -3154,17 +3134,6 @@
     webpack "4"
     webpack-dev-middleware "^3.7.3"
     webpack-virtual-modules "^0.2.2"
-
-"@storybook/node-logger@6.3.6":
-  version "6.3.6"
-  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-6.3.6.tgz#10356608593440a8e3acf2aababef40333a3401b"
-  integrity sha512-XMDkMN7nVRojjiezrURlkI57+nz3OoH4UBV6qJZICKclxtdKAy0wwOlUSYEUq+axcJ4nvdfzPPoDfGoj37SW7A==
-  dependencies:
-    "@types/npmlog" "^4.1.2"
-    chalk "^4.1.0"
-    core-js "^3.8.2"
-    npmlog "^4.1.2"
-    pretty-hrtime "^1.0.3"
 
 "@storybook/node-logger@6.3.7":
   version "6.3.7"
