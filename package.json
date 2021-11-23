@@ -76,7 +76,7 @@
     "vue-jest": "^3.0.4",
     "vue-loader": "^15.9.8",
     "vue-template-compiler": "^2.6.12",
-    "vuex-module-decorators": "^1.0.1"
+    "vuex-module-decorators": "^2.0.0"
   },
   "engines": {
     "npm": "please_use_yarn_instead"
