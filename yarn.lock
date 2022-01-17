@@ -3212,17 +3212,17 @@
     ts-dedent "^2.0.0"
     util-deprecate "^1.0.2"
 
-"@storybook/cli@6.4.9":
-  version "6.4.9"
-  resolved "https://registry.yarnpkg.com/@storybook/cli/-/cli-6.4.9.tgz#b3648f73ecf26e2d932886ae3bf12873aca304cd"
-  integrity sha512-XqNvrRk13XNHYxodtMiF6ZfBGg8aFGapKnWrZ+JCZYOgFuqIVQuSudLfvXXqyG/T+SK7y+Z2uU505BBmOaMWxw==
+"@storybook/cli@6.4.13":
+  version "6.4.13"
+  resolved "https://registry.yarnpkg.com/@storybook/cli/-/cli-6.4.13.tgz#831294424717851653dd571fafdc2c61e7449de6"
+  integrity sha512-Rt21OAtOt8+kxW68pNuwMC9KBSNJF9o3UGA0W7p8Ao9oNYKCqxWbn3/KQt8RAPG/RmeLFgM6byVbVbHIx/z2KA==
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/preset-env" "^7.12.11"
-    "@storybook/codemod" "6.4.9"
-    "@storybook/core-common" "6.4.9"
-    "@storybook/csf-tools" "6.4.9"
-    "@storybook/node-logger" "6.4.9"
+    "@storybook/codemod" "6.4.13"
+    "@storybook/core-common" "6.4.13"
+    "@storybook/csf-tools" "6.4.13"
+    "@storybook/node-logger" "6.4.13"
     "@storybook/semver" "^7.3.2"
     boxen "^5.1.2"
     chalk "^4.1.0"
@@ -3354,22 +3354,22 @@
     core-js "^3.8.2"
     global "^4.4.0"
 
-"@storybook/codemod@6.4.9":
-  version "6.4.9"
-  resolved "https://registry.yarnpkg.com/@storybook/codemod/-/codemod-6.4.9.tgz#1d5977dc80a8dcef28411d2772757edb715e7789"
-  integrity sha512-XqEKwQCVuGs4uFHhIJ6211ek79pCoJSjBuy0gLy8el2jEcwqtAbQfGslGp/2DvnyTGhDO7WDsZYqVjxOOnLWFw==
+"@storybook/codemod@6.4.13":
+  version "6.4.13"
+  resolved "https://registry.yarnpkg.com/@storybook/codemod/-/codemod-6.4.13.tgz#60b811cbdcf727e17f847bd0e29de9bc5ea6d092"
+  integrity sha512-asG4t1q9Smdv+0+FytTA3PzT9Vd5aITNMxdC4IVk4rSgx5eBQoHVyh2RHT033z921ZUafkXERdUlktfc94RJ5Q==
   dependencies:
     "@babel/types" "^7.12.11"
     "@mdx-js/mdx" "^1.6.22"
     "@storybook/csf" "0.0.2--canary.87bc651.0"
-    "@storybook/csf-tools" "6.4.9"
-    "@storybook/node-logger" "6.4.9"
+    "@storybook/csf-tools" "6.4.13"
+    "@storybook/node-logger" "6.4.13"
     core-js "^3.8.2"
     cross-spawn "^7.0.3"
     globby "^11.0.2"
     jscodeshift "^0.7.0"
     lodash "^4.17.21"
-    prettier "^2.2.1"
+    prettier "<=2.3.0"
     recast "^0.19.0"
     regenerator-runtime "^0.13.7"
 
@@ -3570,10 +3570,10 @@
     util-deprecate "^1.0.2"
     webpack "4"
 
-"@storybook/core-common@6.4.8":
-  version "6.4.8"
-  resolved "https://registry.yarnpkg.com/@storybook/core-common/-/core-common-6.4.8.tgz#6aa6bcb5537fb22b0c40b98d15b4096c04ab77f6"
-  integrity sha512-0JVVtSLSCYZ00eHNbX2qOc5IHE5tihiq90rAPQ/vUZjA/cU+4s4CJLxi2O8A94IfUi1gqiyGoZTWotDJo7HfZQ==
+"@storybook/core-common@6.4.13":
+  version "6.4.13"
+  resolved "https://registry.yarnpkg.com/@storybook/core-common/-/core-common-6.4.13.tgz#019ce8089d5f3a96c436f208962fbf711ccf8e5c"
+  integrity sha512-KoFa4yktuqWsW+/O6uc7iba25X9eKhp80l9tHsa1RWE94mQdCBUo5VsNoe35JvqFSDOspQ+brCe6vBUaIYe+cQ==
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/plugin-proposal-class-properties" "^7.12.1"
@@ -3596,7 +3596,7 @@
     "@babel/preset-react" "^7.12.10"
     "@babel/preset-typescript" "^7.12.7"
     "@babel/register" "^7.12.1"
-    "@storybook/node-logger" "6.4.8"
+    "@storybook/node-logger" "6.4.13"
     "@storybook/semver" "^7.3.2"
     "@types/node" "^14.0.10"
     "@types/pretty-hrtime" "^1.0.0"
@@ -3625,10 +3625,10 @@
     util-deprecate "^1.0.2"
     webpack "4"
 
-"@storybook/core-common@6.4.9":
-  version "6.4.9"
-  resolved "https://registry.yarnpkg.com/@storybook/core-common/-/core-common-6.4.9.tgz#1a892903061f927b8f7b9fa8d25273a2f5c9e227"
-  integrity sha512-wVHRfUGnj/Tv8nGjv128NDQ5Zp6c63rSXd1lYLzfZPTJmGOz4rpPPez2IZSnnDwbAWeqUSMekFVZPj4v6yuujQ==
+"@storybook/core-common@6.4.8":
+  version "6.4.8"
+  resolved "https://registry.yarnpkg.com/@storybook/core-common/-/core-common-6.4.8.tgz#6aa6bcb5537fb22b0c40b98d15b4096c04ab77f6"
+  integrity sha512-0JVVtSLSCYZ00eHNbX2qOc5IHE5tihiq90rAPQ/vUZjA/cU+4s4CJLxi2O8A94IfUi1gqiyGoZTWotDJo7HfZQ==
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/plugin-proposal-class-properties" "^7.12.1"
@@ -3651,7 +3651,7 @@
     "@babel/preset-react" "^7.12.10"
     "@babel/preset-typescript" "^7.12.7"
     "@babel/register" "^7.12.1"
-    "@storybook/node-logger" "6.4.9"
+    "@storybook/node-logger" "6.4.8"
     "@storybook/semver" "^7.3.2"
     "@types/node" "^14.0.10"
     "@types/pretty-hrtime" "^1.0.0"
@@ -3843,10 +3843,10 @@
     regenerator-runtime "^0.13.7"
     ts-dedent "^2.0.0"
 
-"@storybook/csf-tools@6.4.8":
-  version "6.4.8"
-  resolved "https://registry.yarnpkg.com/@storybook/csf-tools/-/csf-tools-6.4.8.tgz#514daf88b69156d6d095f785d9f794f9cbb0165e"
-  integrity sha512-VaEJs8oq7RUrTOcvZLeoLk2okHkv79fptRHnyUjWECzgL4g0YxrMEp25PAafC97b0E/CTWQH2u3jkYw9xM/GZQ==
+"@storybook/csf-tools@6.4.13":
+  version "6.4.13"
+  resolved "https://registry.yarnpkg.com/@storybook/csf-tools/-/csf-tools-6.4.13.tgz#393b19f3901784d7c820abbe7379977e7ec5f15c"
+  integrity sha512-eEYQdr/N4bsiQFxNEUkfQ/KyqdnUecwFS7V1k16/m/dP7cfinwW2Yo+9t77uWe3Qmzj9RbM6jrdWxXEUZ6MwvQ==
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/generator" "^7.12.11"
@@ -3862,14 +3862,14 @@
     global "^4.4.0"
     js-string-escape "^1.0.1"
     lodash "^4.17.21"
-    prettier "^2.2.1"
+    prettier "<=2.3.0"
     regenerator-runtime "^0.13.7"
     ts-dedent "^2.0.0"
 
-"@storybook/csf-tools@6.4.9":
-  version "6.4.9"
-  resolved "https://registry.yarnpkg.com/@storybook/csf-tools/-/csf-tools-6.4.9.tgz#7cccb905875ba5962dda83825f763a111932464b"
-  integrity sha512-zbgsx9vY5XOA9bBmyw+KyuRspFXAjEJ6I3d/6Z3G1kNBeOEj9i3DT7O99Rd/THfL/3mWl8DJ/7CJVPk1ZYxunA==
+"@storybook/csf-tools@6.4.8":
+  version "6.4.8"
+  resolved "https://registry.yarnpkg.com/@storybook/csf-tools/-/csf-tools-6.4.8.tgz#514daf88b69156d6d095f785d9f794f9cbb0165e"
+  integrity sha512-VaEJs8oq7RUrTOcvZLeoLk2okHkv79fptRHnyUjWECzgL4g0YxrMEp25PAafC97b0E/CTWQH2u3jkYw9xM/GZQ==
   dependencies:
     "@babel/core" "^7.12.10"
     "@babel/generator" "^7.12.11"
@@ -3998,10 +3998,10 @@
     npmlog "^5.0.1"
     pretty-hrtime "^1.0.3"
 
-"@storybook/node-logger@6.4.8":
-  version "6.4.8"
-  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-6.4.8.tgz#403a21abf2335d8daf88f2f17ceda2ad6719a691"
-  integrity sha512-1gma7KvRXt/wsHzajf1h49r9vfV0TAnv/0OkryvV+sqtK48JV7A6kbVpBK0BtZBRqrQDfYTpCauX4VHfi7yBrQ==
+"@storybook/node-logger@6.4.13":
+  version "6.4.13"
+  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-6.4.13.tgz#67f294e56b5014c81dde542940f9a17f7d74604a"
+  integrity sha512-L0WJjJ3MTkdSpCaC1xSJ1/SJzblQ8E3tYKSI3M3890711gfxtSM/9CfuatQ6ibTXcm5d8bW6TUJayTD4I8vUPg==
   dependencies:
     "@types/npmlog" "^4.1.2"
     chalk "^4.1.0"
@@ -4009,10 +4009,10 @@
     npmlog "^5.0.1"
     pretty-hrtime "^1.0.3"
 
-"@storybook/node-logger@6.4.9":
-  version "6.4.9"
-  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-6.4.9.tgz#7c28f16f5c61feda8f45fa2c06000ebb87b57df7"
-  integrity sha512-giil8dA85poH+nslKHIS9tSxp4MP4ensOec7el6GwKiqzAQXITrm3b7gw61ETj39jAQeLIcQYGHLq1oqQo4/YQ==
+"@storybook/node-logger@6.4.8":
+  version "6.4.8"
+  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-6.4.8.tgz#403a21abf2335d8daf88f2f17ceda2ad6719a691"
+  integrity sha512-1gma7KvRXt/wsHzajf1h49r9vfV0TAnv/0OkryvV+sqtK48JV7A6kbVpBK0BtZBRqrQDfYTpCauX4VHfi7yBrQ==
   dependencies:
     "@types/npmlog" "^4.1.2"
     chalk "^4.1.0"
@@ -15451,6 +15451,11 @@ prettier-linter-helpers@^1.0.0:
   dependencies:
     fast-diff "^1.1.2"
 
+prettier@<=2.3.0:
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.3.0.tgz#b6a5bf1284026ae640f17f7ff5658a7567fc0d18"
+  integrity sha512-kXtO4s0Lz/DW/IJ9QdWhAf7/NmPWQXkFr/r/WkR3vyI+0v8amTDxiaQSLzs8NBlytfLWX/7uQUMIW677yLKl4w==
+
 prettier@^1.18.2:
   version "1.19.1"
   resolved "https://registry.yarnpkg.com/prettier/-/prettier-1.19.1.tgz"
@@ -17528,12 +17533,12 @@ store2@^2.12.0:
   resolved "https://registry.yarnpkg.com/store2/-/store2-2.12.0.tgz"
   integrity sha512-7t+/wpKLanLzSnQPX8WAcuLCCeuSHoWdQuh9SB3xD0kNOM38DNf+0Oa+wmvxmYueRzkmh6IcdKFtvTa+ecgPDw==
 
-storybook@^6.4.9:
-  version "6.4.9"
-  resolved "https://registry.yarnpkg.com/storybook/-/storybook-6.4.9.tgz#79cfa4537c9d7bcd75fab83b69ee7f5e27cbedb6"
-  integrity sha512-wS5ZaAvo3hMhObWNVoYLM8kIZEUAqvjD7szGqgfUVs1Kf0S7XDQxsponfO6s8b8gnhPbnKQHw+6Y8eIB3KaNxA==
+storybook@^6.4.13:
+  version "6.4.13"
+  resolved "https://registry.yarnpkg.com/storybook/-/storybook-6.4.13.tgz#cfa30a75f447e4e1d584cfb7052881133ac1f0e9"
+  integrity sha512-28qLbZvnoLX0wYadK+93tm6yCOiVGtAXx7KLW18Jh2okqdBtfpRFZSom5AwSZ2Y82F1CEKhd1ikVOlGW4AbZ8g==
   dependencies:
-    "@storybook/cli" "6.4.9"
+    "@storybook/cli" "6.4.13"
 
 stream-browserify@^2.0.1:
   version "2.0.2"
